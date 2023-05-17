@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="43" total="44" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-17T12:50:51 BDT" name="Default suite" finished-at="2023-05-17T12:51:02 BDT" duration-ms="10438">
+    <groups>
+    </groups>
+    <test started-at="2023-05-17T12:50:51 BDT" name="Default test" finished-at="2023-05-17T12:51:02 BDT" duration-ms="10438">
+      <class name="testcases.LandingTestCases">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.LandingTestCases@46cdf8bd]" started-at="2023-05-17T12:50:51 BDT" name="setBrowser" finished-at="2023-05-17T12:50:54 BDT" duration-ms="2454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method signature="allBlogsButtonTest()[pri:0, instance:testcases.LandingTestCases@46cdf8bd]" started-at="2023-05-17T12:50:54 BDT" name="allBlogsButtonTest" finished-at="2023-05-17T12:51:01 BDT" duration-ms="7097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allBlogsButtonTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.LandingTestCases@46cdf8bd]" started-at="2023-05-17T12:51:01 BDT" name="closeBrowser" finished-at="2023-05-17T12:51:02 BDT" duration-ms="809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.LandingTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
