@@ -589,6 +589,22 @@ public class LandingTestCases extends BaseDriver {
 		Thread.sleep(1000);
 	}
 	
+	@Test
+	public void selectOneBlogDetails() throws InterruptedException{
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.BLOG_TITTLE_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.BLOG_3_LOCATOR).click();
+		Thread.sleep(1000);		
+		landingPage.assertionURL(landingPage.BLOG_3_URL);
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.BLOG_COMMON_BACK_BUTTON).click();
+		Thread.sleep(1000);	
+		landingPage.assertionURL(landingPage.BASE_URL);
+	}
+	
+	
 	
 
 

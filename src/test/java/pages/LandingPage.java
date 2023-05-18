@@ -41,6 +41,7 @@ public class LandingPage extends BasePage {
 	public String FAQ_QUESTION_4_ANSWER = "Currently, you can download PDF only but soon we will introduce Word format download as well.";
 	public String FAQ_QUESTION_5_ANSWER = "NO, only you will be able to view, edit and download the CV created using UR-CV. All your data is safe and it will not be shared publicly.";
 	public String BLOG_TITTLE_TEXT = "Read blogs to improve your required skills";
+	public String BLOG_3_URL = "https://ur-cv.com/blogs/hobbies-and-interests-on-your-cv-a-guide";
 	
 	
 	public By ICON_HOME_BUTTON =By.xpath("//body/div[@id='app']/div[1]/div[2]/nav[1]/div[1]/a[1]/img[1]");
@@ -106,6 +107,8 @@ public class LandingPage extends BasePage {
 	public By FAQ_QUESTION_ANSWER_5_LOCATOR = By.xpath("//p[contains(text(),'NO, only you will be able to view, edit and downlo')]");
 	public By FAQ_QUESTION_FIND_MORE_BUTTON = By.xpath("//a[contains(text(),'Find more FAQ')]");
 	public By BLOG_TITTLE_LOCATOR=By.xpath("//h2[contains(text(),'required sk')]");
+	public By BLOG_3_LOCATOR=By.xpath("//p[contains(text(),'Hobbies And Interests On Your CV : A Guide')]");
+	public By BLOG_COMMON_BACK_BUTTON=By.xpath("//body/div[@id='app']/div[@id='laravel-block']/div[2]/div[1]/a[1]");
 	
 	
 }
