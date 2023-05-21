@@ -604,6 +604,215 @@ public class LandingTestCases extends BaseDriver {
 		landingPage.assertionURL(landingPage.BASE_URL);
 	}
 	
+	@Test
+	public void blogsHoverSsTest() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.BLOG_TITTLE_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.hover(landingPage.BLOG_1_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.hover(landingPage.BLOG_2_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.hover(landingPage.BLOG_3_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.hover(landingPage.BLOG_4_LOCATOR);
+		Thread.sleep(1000);
+		
+	}
+	
+	@Test
+	public void footerTittleVerify() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.assertionHard(landingPage.FOOTER_TEXT_LOCATOR,landingPage.FOOTER_TEXT);
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerAddressVerify() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+				
+		landingPage.assertionHard(landingPage.FOOTER_ADDRESS_LOCATOR,landingPage.FOOTER_ADDRESS_TEXT);
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerMailVerify() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.hover(landingPage.FOOTER_MAIL_LOCATOR);
+		Thread.sleep(1000);
+				
+		landingPage.assertionHard(landingPage.FOOTER_MAIL_LOCATOR,landingPage.FOOTER_MAIL_TEXT);
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerPhoneVerify() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.hover(landingPage.FOOTER_CONTACT_LOCATOR);
+		Thread.sleep(1000);
+				
+		landingPage.assertionHard(landingPage.FOOTER_CONTACT_LOCATOR,landingPage.FOOTER_CONCACT_TEXT);
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerAboutUsButtonTest() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.hover(landingPage.FOOTER_ABOUTUS_BUTTON);
+		Thread.sleep(1000);
+				
+		landingPage.findElement(landingPage.FOOTER_ABOUTUS_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL(aboutUsPage.ABOUTUS_URL);
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerTermsConditionButtonTest() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.hover(landingPage.FOOTER_TERMS_CONDITION_BUTTON);
+		Thread.sleep(1000);
+				
+		landingPage.findElement(landingPage.FOOTER_TERMS_CONDITION_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL("https://ur-cv.com/terms-and-condition");
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerPrivacyPolicyButtonTest() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.hover(landingPage.FOOTER_PRIVACY_POLICIES_BUTTON);
+		Thread.sleep(1000);
+		
+		landingPage.findElement(landingPage.FOOTER_PRIVACY_POLICIES_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL("https://ur-cv.com/privacy-policy");
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerFAQButtonTest() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.hover(landingPage.FOOTER_FQA_BUTTON);
+		Thread.sleep(1000);
+		
+		landingPage.findElement(landingPage.FOOTER_FQA_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL("https://ur-cv.com/frequently-ask-question");
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerCreateResumeButtonTest() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(2000);
+		landingPage.hover(landingPage.FOOTER_CREATE_RESUME_BUTTON);
+		Thread.sleep(1000);
+		
+		landingPage.findElement(landingPage.FOOTER_CREATE_RESUME_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL(loginPage.LOGIN_URL);
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerAllTemplateButtonTest() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(2000);
+		landingPage.hover(landingPage.FOOTER_ALL_TEMPLATE_BUTTON);
+		Thread.sleep(1000);
+		
+		landingPage.findElement(landingPage.FOOTER_ALL_TEMPLATE_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL(templatePage.TEMPLATES_URL);
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerBlogsButtonTest() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(2000);
+		landingPage.hover(landingPage.FOOTER_BLOGS_BUTTON);
+		Thread.sleep(1000);
+		
+		landingPage.findElement(landingPage.FOOTER_BLOGS_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL("https://ur-cv.com/blogs");
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerLoginButtonTest() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(2000);
+		landingPage.hover(landingPage.FOOTER_LOGIN_BUTTON);
+		Thread.sleep(1000);
+		
+		landingPage.findElement(landingPage.FOOTER_LOGIN_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL(loginPage.LOGIN_URL);
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerCreateAccountButtonTest() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(2000);
+		landingPage.hover(landingPage.FOOTER_CREATE_ACCOUNT_BUTTON);
+		Thread.sleep(1000);
+		
+		landingPage.findElement(landingPage.FOOTER_CREATE_ACCOUNT_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL("https://ur-cv.com/register");
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerNewsLetterTextVerify() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+		
+		landingPage.assertionHard(landingPage.FOOTER_NEWSLETTER_TEXT_LOCATOR, landingPage.FOOTER_NEWSLETTER_TEXT);
+		Thread.sleep(1000);
+	}
 	
 	
 

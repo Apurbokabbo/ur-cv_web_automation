@@ -5,9 +5,9 @@
     <classes>
       <class name="testcases.LandingTestCases">
         <methods>
+          <include name="footerCreateResumeButtonTest"/>
           <include name="setBrowser"/>
           <include name="closeBrowser"/>
-          <include name="allBlogsButtonTest"/>
         </methods>
       </class> <!-- testcases.LandingTestCases -->
     </classes>

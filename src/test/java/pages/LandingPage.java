@@ -108,6 +108,9 @@ public class LandingPage extends BasePage {
 	public By FAQ_QUESTION_FIND_MORE_BUTTON = By.xpath("//a[contains(text(),'Find more FAQ')]");
 	public By BLOG_TITTLE_LOCATOR=By.xpath("//h2[contains(text(),'required sk')]");
 	public By BLOG_3_LOCATOR=By.xpath("//p[contains(text(),'Hobbies And Interests On Your CV : A Guide')]");
+	public By BLOG_1_LOCATOR=By.xpath("//p[contains(text(),'Create a Professional CV Online in Minutes Using w')]");
+	public By BLOG_2_LOCATOR=By.xpath("//p[contains(text(),'How To Tailor Your CV To The Job Description')]");
+	public By BLOG_4_LOCATOR=By.xpath("//p[contains(text(),'How many pages should a CV be? - A CV format gener')]");
 	public By BLOG_COMMON_BACK_BUTTON=By.xpath("//body/div[@id='app']/div[@id='laravel-block']/div[2]/div[1]/a[1]");
 	
 	
