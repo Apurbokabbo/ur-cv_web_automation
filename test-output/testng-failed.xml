@@ -5,8 +5,8 @@
     <classes>
       <class name="testcases.LandingTestCases">
         <methods>
-          <include name="footerCreateResumeButtonTest"/>
           <include name="setBrowser"/>
+          <include name="dashBoardButtonTesting"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- testcases.LandingTestCases -->

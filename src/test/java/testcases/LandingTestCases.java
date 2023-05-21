@@ -814,6 +814,137 @@ public class LandingTestCases extends BaseDriver {
 		Thread.sleep(1000);
 	}
 	
+	@Test
+	public void footerNewsLetterSubcriptionButtonVerify() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.FOOTER_NEWSLETTER_SUBSCRIBE_BUTTON).click();
+		Thread.sleep(1000);
+		
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerNewsLetterSubcriptionValidInput() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.FOOTER_NEWSLETTER_INPUT_FIELD).sendKeys("s1@gmail.com");
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.FOOTER_NEWSLETTER_SUBSCRIBE_BUTTON).click();
+		Thread.sleep(1000);
+		
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerNewsLetterSubcriptionExistingUser() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.FOOTER_NEWSLETTER_INPUT_FIELD).sendKeys("s1@gmail.com");
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.FOOTER_NEWSLETTER_SUBSCRIBE_BUTTON).click();
+		Thread.sleep(1000);
+		
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void footerNewsLetterSubcriptionInvalidMail() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.FOOTER_TEXT_LOCATOR);
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.FOOTER_NEWSLETTER_INPUT_FIELD).sendKeys("s1@gmail");
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.FOOTER_NEWSLETTER_SUBSCRIBE_BUTTON).click();
+		Thread.sleep(1000);
+		
+		Thread.sleep(1000);
+	}
+	
+	@Test
+	public void loginUserCreateFreeCvButtonTest() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.NAV_LOGIN_BUTTON).click();
+		Thread.sleep(1000);
+		loginPage.loginWithValidData(loginPage.USER_NAME, loginPage.PASSWORD);
+		Thread.sleep(1000);
+		landingPage.assertionURL("https://ur-cv.com/dashboard/my-profile");
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.NAV_HOME_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.CREATE_FREE_CV_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL("https://ur-cv.com/dashboard/my-profile");
+		Thread.sleep(1000);
+		
+	}
+	
+	
+	@Test
+	public void loginUserCreateFreeCvButtonFromMiddlePageTest() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.CREATE_FREE_CV_MIDDLE_BUTTON);
+		Thread.sleep(2000);
+		landingPage.findElement(landingPage.CREATE_FREE_CV_MIDDLE_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL(loginPage.LOGIN_URL);
+		loginPage.loginWithValidData(loginPage.USER_NAME, loginPage.PASSWORD);
+		Thread.sleep(1000);
+		landingPage.assertionURL("https://ur-cv.com/dashboard/my-profile");
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.NAV_HOME_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.scrollingDownTillElementFound(landingPage.CREATE_FREE_CV_MIDDLE_BUTTON);
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.CREATE_FREE_CV_MIDDLE_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL("https://ur-cv.com/dashboard/my-profile");
+		Thread.sleep(1000);
+		
+	}
+	
+	
+	@Test
+	public void logoutButtonTesting() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.NAV_LOGIN_BUTTON).click();
+		Thread.sleep(1000);
+		loginPage.loginWithValidData(loginPage.USER_NAME, loginPage.PASSWORD);
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.Nav_Profile_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.Nav_Dropdown_Logout_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL(landingPage.BASE_URL);
+		
+	}
+	
+	@Test
+	public void dashBoardButtonTesting() throws InterruptedException {
+		getDriver().get(landingPage.BASE_URL);
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.NAV_LOGIN_BUTTON).click();
+		Thread.sleep(1000);
+		loginPage.loginWithValidData(loginPage.USER_NAME, loginPage.PASSWORD);
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.NAV_LOGO_HOME_BUTTON).click();
+		landingPage.findElement(landingPage.Nav_Profile_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.findElement(landingPage.Nav_Dropdown_Dashboard_BUTTON).click();
+		Thread.sleep(1000);
+		landingPage.assertionURL("https://ur-cv.com/dashboard/my-profile");
+		
+	}
 	
 
 

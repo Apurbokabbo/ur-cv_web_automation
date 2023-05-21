@@ -112,6 +112,9 @@ public class LandingPage extends BasePage {
 	public By BLOG_2_LOCATOR=By.xpath("//p[contains(text(),'How To Tailor Your CV To The Job Description')]");
 	public By BLOG_4_LOCATOR=By.xpath("//p[contains(text(),'How many pages should a CV be? - A CV format gener')]");
 	public By BLOG_COMMON_BACK_BUTTON=By.xpath("//body/div[@id='app']/div[@id='laravel-block']/div[2]/div[1]/a[1]");
+	public By Nav_Profile_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[2]/nav[1]/div[1]/div[2]/div[1]/div[1]/div[1]");
+	public By Nav_Dropdown_Dashboard_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[2]/nav[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]");
+	public By Nav_Dropdown_Logout_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[2]/nav[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]");
 	
 	
 }
