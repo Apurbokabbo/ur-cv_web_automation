@@ -4,8 +4,10 @@
   <test thread-count="2" parallel="methods" name="Test">
     <classes>
       <class name="testcases.LandingTestCases"/>
+      <class name="testcases.AboutTestCases"/>
       <class name="testcases.LoginTestCases"/>
       <class name="testcases.RegisterTestCases"/>
+      <class name="testcases.TemplatesTestCases"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

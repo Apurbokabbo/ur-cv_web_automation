@@ -3,6 +3,7 @@ package testcases;
 import org.testng.annotations.Test;
 
 import pages.AboutUsPage;
+import pages.BlogsPage;
 import pages.CartPage;
 import pages.LandingPage;
 import pages.LoginPage;
@@ -16,6 +17,7 @@ public class LandingTestCases extends BaseDriver {
 	AboutUsPage aboutUsPage = new AboutUsPage();
 	CartPage cartPage = new CartPage();
 	LoginPage loginPage = new LoginPage();
+	BlogsPage BlogsPage = new BlogsPage();
 	
 	@Test
 	public void landingPageTittleSentence() throws InterruptedException {
