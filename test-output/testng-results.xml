@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-23T19:18:01 BDT" name="Default suite" finished-at="2023-05-23T19:18:22 BDT" duration-ms="20124">
+  <suite started-at="2023-06-08T18:11:04 BDT" name="Default suite" finished-at="2023-06-08T18:11:43 BDT" duration-ms="39423">
     <groups>
     </groups>
-    <test started-at="2023-05-23T19:18:01 BDT" name="Default test" finished-at="2023-05-23T19:18:22 BDT" duration-ms="20124">
-      <class name="testcases.FaqPageTestCases">
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.FaqPageTestCases@5824a83d]" started-at="2023-05-23T19:18:01 BDT" name="setBrowser" finished-at="2023-05-23T19:18:04 BDT" duration-ms="2593" status="PASS">
+    <test started-at="2023-06-08T18:11:04 BDT" name="Default test" finished-at="2023-06-08T18:11:43 BDT" duration-ms="39423">
+      <class name="testcases.PrivacyPoliceTestCases">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.PrivacyPoliceTestCases@51c668e3]" started-at="2023-06-08T18:11:04 BDT" name="setBrowser" finished-at="2023-06-08T18:11:06 BDT" duration-ms="2889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method signature="faqPageQuest2QuestAnswerVerify()[pri:0, instance:testcases.FaqPageTestCases@5824a83d]" started-at="2023-05-23T19:18:04 BDT" name="faqPageQuest2QuestAnswerVerify" finished-at="2023-05-23T19:18:21 BDT" duration-ms="16567" status="PASS">
+        <test-method signature="overviewBodyTextPart1Verify()[pri:0, instance:testcases.PrivacyPoliceTestCases@51c668e3]" started-at="2023-06-08T18:11:06 BDT" name="overviewBodyTextPart1Verify" finished-at="2023-06-08T18:11:13 BDT" duration-ms="7028" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- faqPageQuest2QuestAnswerVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.FaqPageTestCases@5824a83d]" started-at="2023-05-23T19:18:21 BDT" name="closeBrowser" finished-at="2023-05-23T19:18:22 BDT" duration-ms="876" status="PASS">
+        </test-method> <!-- overviewBodyTextPart1Verify -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.PrivacyPoliceTestCases@51c668e3]" started-at="2023-06-08T18:11:13 BDT" name="closeBrowser" finished-at="2023-06-08T18:11:14 BDT" duration-ms="753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.FaqPageTestCases -->
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.PrivacyPoliceTestCases@51c668e3]" started-at="2023-06-08T18:11:14 BDT" name="setBrowser" finished-at="2023-06-08T18:11:16 BDT" duration-ms="1666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method signature="overviewBodyTextPart2Verify()[pri:0, instance:testcases.PrivacyPoliceTestCases@51c668e3]" started-at="2023-06-08T18:11:16 BDT" name="overviewBodyTextPart2Verify" finished-at="2023-06-08T18:11:19 BDT" duration-ms="3079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- overviewBodyTextPart2Verify -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.PrivacyPoliceTestCases@51c668e3]" started-at="2023-06-08T18:11:19 BDT" name="closeBrowser" finished-at="2023-06-08T18:11:20 BDT" duration-ms="749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.PrivacyPoliceTestCases@51c668e3]" started-at="2023-06-08T18:11:20 BDT" name="setBrowser" finished-at="2023-06-08T18:11:21 BDT" duration-ms="1761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method signature="overviewBodyTextPart3Verify()[pri:0, instance:testcases.PrivacyPoliceTestCases@51c668e3]" started-at="2023-06-08T18:11:21 BDT" name="overviewBodyTextPart3Verify" finished-at="2023-06-08T18:11:25 BDT" duration-ms="3634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- overviewBodyTextPart3Verify -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.PrivacyPoliceTestCases@51c668e3]" started-at="2023-06-08T18:11:25 BDT" name="closeBrowser" finished-at="2023-06-08T18:11:26 BDT" duration-ms="870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.PrivacyPoliceTestCases@51c668e3]" started-at="2023-06-08T18:11:26 BDT" name="setBrowser" finished-at="2023-06-08T18:11:28 BDT" duration-ms="1761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method signature="urlVerifyFromHomePage()[pri:0, instance:testcases.PrivacyPoliceTestCases@51c668e3]" started-at="2023-06-08T18:11:28 BDT" name="urlVerifyFromHomePage" finished-at="2023-06-08T18:11:42 BDT" duration-ms="14115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlVerifyFromHomePage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.PrivacyPoliceTestCases@51c668e3]" started-at="2023-06-08T18:11:42 BDT" name="closeBrowser" finished-at="2023-06-08T18:11:43 BDT" duration-ms="1041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.PrivacyPoliceTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

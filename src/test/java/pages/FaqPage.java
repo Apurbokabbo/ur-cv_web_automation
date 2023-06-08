@@ -13,8 +13,8 @@ public class FaqPage extends BasePage {
 	public String FAQ_PAGE_QUEST_6_TEXT = "What is the payment method for purchasing templates?";
 	public String FAQ_PAGE_QUEST_7_TEXT = "Can I edit the template I bought once and use it for the rest of my life?";
 	public String FAQ_PAGE_QUEST_8_TEXT = "How many templates do UR-CV have?";
-	public String FAQ_PAGE_QUEST_9_TEXT = "Can a resume be more than one page ?";
-	public String FAQ_PAGE_QUEST_10_TEXT = "What's the deifference between a resume and a carriculum vitae?";
+	public String FAQ_PAGE_QUEST_9_TEXT = "Can a resume be more than one page?";
+	public String FAQ_PAGE_QUEST_10_TEXT = "What's the difference between a resume and a curriculum vitae?";
 	public String FAQ_PAGE_ANSWER_1_TEXT = "Yes your UR-CV is free to use if you are using the free templates. There are multiple free templates that can be used to create CVs for free.";
 	public String FAQ_PAGE_ANSWER_2_TEXT = "Ur-CV is home to thousands of professionally created templates. By simply searching your current job position we will suggest a bunch of templates that will match your position and expectations. All the templates are designed in such a way that best represents the position intended and increases the chance of landing the desired job.";
 	public String FAQ_PAGE_ANSWER_3_TEXT = "You no longer need to do the hard work of writing content. UR-CV will suggest your career objectives, Skills and also suggestions of responsibilities, and many more. All the contents are bespoke and generated automatically by advanced algorithms.";
@@ -50,7 +50,7 @@ public class FaqPage extends BasePage {
 	public By FAQ_PAGE_ANSWER_9_LOCATOR = By.xpath("//p[contains(text(),'Yes, a resume can be more than one page long, but ')]");
 	public By FAQ_PAGE_ANSWER_10_LOCATOR = By.xpath("//p[contains(text(),'A curriculum vitae (CV) is an academic resume used')]");
 	
-	public void faqQuestionAnswerVerifer(By previousQuestionLocator,By questionLoator , String questionText, By answerLocator,String answerText) throws InterruptedException {
+	public void faqQuestionAnswerVerifer(By previousQuestAnsLocator,By questionLoator , String questionText, By answerLocator,String answerText) throws InterruptedException {
 		
 		 
 		assertionHard(questionLoator,questionText);
@@ -62,7 +62,7 @@ public class FaqPage extends BasePage {
 		
 		try {
 			
-			findElement(previousQuestionLocator).click();
+			findElement(previousQuestAnsLocator).click();
 					
 		}
 		catch (Exception e) {
