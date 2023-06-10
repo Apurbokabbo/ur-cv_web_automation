@@ -49,5 +49,57 @@ public class PrivacyPoliceTestCases extends BaseDriver {
 		privacyPoliceObj.assertionMethod(privacyPoliceObj.OVERVIEW_BUTTON_LOCATOR, privacyPoliceObj.OVERVIEW_TEXT_PART_3_LOCATOR, privacyPoliceObj.OVERVIEW_TEXT_PART_3);
 		
 	}
+	
+	@Test
+	public void contenttittletextVerify() throws InterruptedException{
+		getDriver().get(privacyPoliceObj.PrivacyPolice_URL);
+		
+		privacyPoliceObj.assertionMethod(privacyPoliceObj.CONSENT_BUTTON_LOCATOR, privacyPoliceObj.CONSENT_TITTLE_LOCATOR, privacyPoliceObj.CONSENT_TITTLE_TEXT);
+		
+	}
+	
+	@Test
+	public void contentbodytextVerify() throws InterruptedException{
+		getDriver().get(privacyPoliceObj.PrivacyPolice_URL);
+		
+		privacyPoliceObj.assertionMethod(privacyPoliceObj.CONSENT_BUTTON_LOCATOR, privacyPoliceObj.CONTENT_BODY_TEXT_LOCATOR, privacyPoliceObj.CONTENT_BODY_TEXT);
+		
+	}
+	
+	@Test
+	public void informationTittleVerify() throws InterruptedException{
+		getDriver().get(privacyPoliceObj.PrivacyPolice_URL);
+		
+		privacyPoliceObj.assertionMethod(privacyPoliceObj.INFORMATION_BUTTON_LOCATOR, privacyPoliceObj.INFORMATION_TITTLE_LOCATOR, privacyPoliceObj.INFORMATION_TITTLE_TEXT);
+		
+	}
+	
+//	@Test
+//	public void informationbodyVerify() throws InterruptedException{
+//		getDriver().get(privacyPoliceObj.PrivacyPolice_URL);
+//		System.out.println(privacyPoliceObj.getText(privacyPoliceObj.INFORMATION_BODY_TEXT_LOCATOR));
+//		privacyPoliceObj.assertionMethod(privacyPoliceObj.INFORMATION_BUTTON_LOCATOR, privacyPoliceObj.INFORMATION_BODY_TEXT_LOCATOR, privacyPoliceObj.INFORMATION_BODY_TEXT);
+//		
+//	}
+	
+	@Test
+	public void useYourinformationTittleVerify() throws InterruptedException{
+		getDriver().get(privacyPoliceObj.PrivacyPolice_URL);
+		
+		privacyPoliceObj.assertionMethod(privacyPoliceObj.USE_YOUR_INFORMATION_BUTTON_LOCATOR, privacyPoliceObj.USE_INFORMATION_TITTLE_LOCATOR, privacyPoliceObj.USE_INFORMATION_TITTLE_TEXT);
+		
+	}
+	
+	@Test
+	public void logFilesTittleVerify() throws InterruptedException{
+		getDriver().get(privacyPoliceObj.PrivacyPolice_URL);
+		
+		privacyPoliceObj.assertionMethod(privacyPoliceObj.LOG_FILES_BUTTON_LOCATOR, privacyPoliceObj.LOG_FILE_TITTLE_LOCATOR, privacyPoliceObj.LOG_FILE_TITTLE_TEXT);
+		
+	}
+	
+	
+	
+	
 
 }
