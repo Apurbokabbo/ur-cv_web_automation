@@ -172,14 +172,14 @@ public class PrivacyPoliceTestCases extends BaseDriver {
 	}
 	
 	
-//	@Test
-//	public void GPDRBodyVerify() throws InterruptedException{
-//		getDriver().get(privacyPoliceObj.PrivacyPolice_URL);
-//		
-//		privacyPoliceObj.assertionMethod(privacyPoliceObj.GPDR_BUTTON_LOCATOR, privacyPoliceObj.GPDR_BODY_LOCATOR, privacyPoliceObj.GPDR_BODY_TEXT);
-//		
-//		
-//	}
+	@Test
+	public void GPDRBodyVerify() throws InterruptedException{
+	getDriver().get(privacyPoliceObj.PrivacyPolice_URL);
+		
+		privacyPoliceObj.assertionMethod(privacyPoliceObj.GPDR_BUTTON_LOCATOR, privacyPoliceObj.GPDR_BODY_LOCATOR,privacyPoliceObj.GPDR_BODY_TEXT);
+		
+		
+	}
 	
 	@Test
 	public void topButtonVerify() throws InterruptedException {
