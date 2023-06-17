@@ -27,18 +27,21 @@ public class TermConditionPage extends BasePage {
 	public String INDEMINIFICATION_TITTLE_TEXT= "Indeminification";
 	public String USER_DATA_TITTLE_TEXT= "User data";
 	public String ELECTRONIC_TITTLE_TEXT= "Electronic communications, transactions, & signatures";
+	public String MISCELLANEOUS_TITTLE_TEXT= "Miscellaneous";
+	public String CONTACT_US_TITTLE_TEXT= "Contact us";
 
 	
 	
 	
 	public By BACK_BUTTON_LOCATOR = By.xpath("//body/div[@id='app']/div[1]/div[3]/div[1]/div[1]/a[1]");
+	public By FOOTER_TERMS_LOCATOR = By.xpath("//a[contains(text(),'Terms & conditions')]");
 	public By TOP_BUTTON_LOCATOR= By.xpath("//div[@id='pagetop']");
 	public By AGREEMENT_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'Agreement to terms')]");
 	public By AGREEMENT_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'Agreement to terms')]");
 	public By INTRLLECTUAL_PROPERTY_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'Intellectual property rights')]");
 	public By INTRLLECTUAL_PROPERTY_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'Intellectual property rights')]");
-	public By USER_REPRESENTATIOM_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'User representations')]");
-	public By USER_REPRESENTATIOM_TEXT_LOCATOR= By.xpath("//h4[contains(text(),'User representations')]");
+	public By USER_REPRESENTATION_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'User representations')]");
+	public By USER_REPRESENTATION_TEXT_LOCATOR= By.xpath("//h4[contains(text(),'User representations')]");
 	public By USER_REGISTRATION_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'User registration')]");
 	public By USER_REGISTRATION_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'User registration')]");
 	public By DIGITAL_PAYMENT_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'Digital payment & refund policy')]");
@@ -46,7 +49,7 @@ public class TermConditionPage extends BasePage {
 	public By PROHIBITED_ACTIVITIES_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'Prohibited activities')]");
 	public By PROHIBITED_ACTIVITIES_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'Prohibited activities')]");
 	public By USER_GENERATED_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'User-generated contributions')]");
-	public By USER_GENERATED_BUTTO_LOCATOR= By.xpath("//span[contains(text(),'User-generated contributions')]");
+	public By USER_GENERATED_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'User-generated contributions')]");
 	public By CONTRIBUTION_LICENSE_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'Contribution license')]");
 	public By CONTRIBUTION_LICENSE_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'Contribution license')]");
 	public By SUBMISSION_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'Submission')]");
@@ -74,9 +77,37 @@ public class TermConditionPage extends BasePage {
 	public By INDEMINIFICATION_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'Indeminification')]");
 	public By INDEMINIFICATION_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'Indeminification')]");
 	public By USER_DATA_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'User data')]");
-	public By uSER_DATA_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'User data')]");
+	public By USER_DATA_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'User data')]");
 	public By ELECTRONIC_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'Electronic communications, transactions, & signatu')]");
 	public By ELECTRONIC_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'Electronic communications, transactions, & signatu')]");
+	public By MISCELLANEOUS_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'Miscellaneous')]");
+	public By MISCELLANEOUS_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'Miscellaneous')]");
+	public By CONTACT_US_TITTLE_LOCATOR= By.xpath("//h4[contains(text(),'Contact us')]");
+	public By CONTACT_US_BUTTON_LOCATOR= By.xpath("//span[contains(text(),'Contact us')]");
+	
+	
+	public void assertionMethod(By buttoName , By textLocator, String text) throws InterruptedException {
+		
+		try
+		{
+			findElement(buttoName).click();
+			Thread.sleep(2000);
+			assertionHard(textLocator, text);
+			
+		} 
+		
+		catch (Exception e) 
+		{
+			scrollingDownTillElementFound(buttoName);
+			Thread.sleep(2000);
+			findElement(buttoName).click();
+			Thread.sleep(2000);
+			assertionHard(textLocator, text);
+		}
+		
+		
+		
+	}
 
 
 }

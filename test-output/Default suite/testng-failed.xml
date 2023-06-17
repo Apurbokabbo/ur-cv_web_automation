@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.PrivacyPoliceTestCases">
+      <class name="testcases.TermConditionTestCases">
         <methods>
           <include name="setBrowser"/>
-          <include name="GPDRBodyVerify"/>
+          <include name="userGeneratedTittleVerify"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testcases.PrivacyPoliceTestCases -->
+      </class> <!-- testcases.TermConditionTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
