@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TermConditionTestCases">
+      <class name="testcases.DashboardProfilePageTestCases">
         <methods>
           <include name="setBrowser"/>
-          <include name="userGeneratedTittleVerify"/>
           <include name="closeBrowser"/>
+          <include name="uploadProfileImage"/>
         </methods>
-      </class> <!-- testcases.TermConditionTestCases -->
+      </class> <!-- testcases.DashboardProfilePageTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

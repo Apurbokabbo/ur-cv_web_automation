@@ -1,325 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-14T17:15:47 BDT" name="Default suite" finished-at="2023-06-14T17:19:45 BDT" duration-ms="237719">
+  <suite started-at="2023-06-18T17:16:21 BDT" name="Default suite" finished-at="2023-06-18T17:16:34 BDT" duration-ms="12718">
     <groups>
     </groups>
-    <test started-at="2023-06-14T17:15:47 BDT" name="Default test" finished-at="2023-06-14T17:19:45 BDT" duration-ms="237719">
-      <class name="testcases.TermConditionTestCases">
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:15:47 BDT" name="setBrowser" finished-at="2023-06-14T17:15:50 BDT" duration-ms="2726" status="PASS">
+    <test started-at="2023-06-18T17:16:21 BDT" name="Default test" finished-at="2023-06-18T17:16:34 BDT" duration-ms="12718">
+      <class name="testcases.DashboardProfilePageTestCases">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@7b36aa0c]" started-at="2023-06-18T17:16:21 BDT" name="setBrowser" finished-at="2023-06-18T17:16:24 BDT" duration-ms="2690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method signature="CorrectionsTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:15:50 BDT" name="CorrectionsTittleVerify" finished-at="2023-06-14T17:15:55 BDT" duration-ms="4671" status="PASS">
+        <test-method signature="uploadProfileImage()[pri:0, instance:testcases.DashboardProfilePageTestCases@7b36aa0c]" started-at="2023-06-18T17:16:24 BDT" name="uploadProfileImage" finished-at="2023-06-18T17:16:33 BDT" duration-ms="8722" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=114.0.5735.134)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [caae8069329d147e670f069b66b35d05, sendKeysToElement {id=76DE6DF7ACD657BC22F437437526F1DE_element_70, value=[Ljava.lang.CharSequence;@7c36db44}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\APURBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56893/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (caae8069329d147e670f069b66b35d05)] -> xpath: //body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]]
+Session ID: caae8069329d147e670f069b66b35d05]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=114.0.5735.134)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [caae8069329d147e670f069b66b35d05, sendKeysToElement {id=76DE6DF7ACD657BC22F437437526F1DE_element_70, value=[Ljava.lang.CharSequence;@7c36db44}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\APURBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56893/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (caae8069329d147e670f069b66b35d05)] -> xpath: //body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]]
+Session ID: caae8069329d147e670f069b66b35d05
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at testcases.DashboardProfilePageTestCases.uploadProfileImage(DashboardProfilePageTestCases.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CorrectionsTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:15:55 BDT" name="closeBrowser" finished-at="2023-06-14T17:15:55 BDT" duration-ms="799" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:15:55 BDT" name="setBrowser" finished-at="2023-06-14T17:15:57 BDT" duration-ms="1748" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="agreementTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:15:57 BDT" name="agreementTittleVerify" finished-at="2023-06-14T17:16:03 BDT" duration-ms="6339" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- agreementTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:03 BDT" name="closeBrowser" finished-at="2023-06-14T17:16:04 BDT" duration-ms="761" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:04 BDT" name="setBrowser" finished-at="2023-06-14T17:16:06 BDT" duration-ms="1726" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="backButtonTest()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:06 BDT" name="backButtonTest" finished-at="2023-06-14T17:16:21 BDT" duration-ms="15545" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- backButtonTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:21 BDT" name="closeBrowser" finished-at="2023-06-14T17:16:23 BDT" duration-ms="1242" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:23 BDT" name="setBrowser" finished-at="2023-06-14T17:16:24 BDT" duration-ms="1738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="contactUsTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:24 BDT" name="contactUsTittleVerify" finished-at="2023-06-14T17:16:32 BDT" duration-ms="7141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- contactUsTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:32 BDT" name="closeBrowser" finished-at="2023-06-14T17:16:32 BDT" duration-ms="785" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:32 BDT" name="setBrowser" finished-at="2023-06-14T17:16:34 BDT" duration-ms="1321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="contributionLicenseTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:34 BDT" name="contributionLicenseTittleVerify" finished-at="2023-06-14T17:16:39 BDT" duration-ms="5092" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- contributionLicenseTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:39 BDT" name="closeBrowser" finished-at="2023-06-14T17:16:40 BDT" duration-ms="798" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:40 BDT" name="setBrowser" finished-at="2023-06-14T17:16:41 BDT" duration-ms="1715" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="copyrightInfringmentsTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:41 BDT" name="copyrightInfringmentsTittleVerify" finished-at="2023-06-14T17:16:46 BDT" duration-ms="4875" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- copyrightInfringmentsTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:46 BDT" name="closeBrowser" finished-at="2023-06-14T17:16:47 BDT" duration-ms="788" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:47 BDT" name="setBrowser" finished-at="2023-06-14T17:16:49 BDT" duration-ms="1753" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="digitalPaymentTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:49 BDT" name="digitalPaymentTittleVerify" finished-at="2023-06-14T17:16:54 BDT" duration-ms="5052" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- digitalPaymentTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:54 BDT" name="closeBrowser" finished-at="2023-06-14T17:16:55 BDT" duration-ms="809" status="PASS">
+        </test-method> <!-- uploadProfileImage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@7b36aa0c]" started-at="2023-06-18T17:16:33 BDT" name="closeBrowser" finished-at="2023-06-18T17:16:34 BDT" duration-ms="1226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:55 BDT" name="setBrowser" finished-at="2023-06-14T17:16:56 BDT" duration-ms="1301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="disclaimerTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:16:56 BDT" name="disclaimerTittleVerify" finished-at="2023-06-14T17:17:02 BDT" duration-ms="5863" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disclaimerTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:02 BDT" name="closeBrowser" finished-at="2023-06-14T17:17:03 BDT" duration-ms="1237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:03 BDT" name="setBrowser" finished-at="2023-06-14T17:17:05 BDT" duration-ms="1691" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="disputeResolutionTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:05 BDT" name="disputeResolutionTittleVerify" finished-at="2023-06-14T17:17:12 BDT" duration-ms="7287" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disputeResolutionTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:12 BDT" name="closeBrowser" finished-at="2023-06-14T17:17:13 BDT" duration-ms="1228" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:13 BDT" name="setBrowser" finished-at="2023-06-14T17:17:14 BDT" duration-ms="1191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="electronicCommunicationsTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:14 BDT" name="electronicCommunicationsTittleVerify" finished-at="2023-06-14T17:17:19 BDT" duration-ms="5026" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- electronicCommunicationsTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:19 BDT" name="closeBrowser" finished-at="2023-06-14T17:17:20 BDT" duration-ms="752" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:20 BDT" name="setBrowser" finished-at="2023-06-14T17:17:21 BDT" duration-ms="1289" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="governingLawTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:21 BDT" name="governingLawTittleVerify" finished-at="2023-06-14T17:17:26 BDT" duration-ms="4777" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- governingLawTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:26 BDT" name="closeBrowser" finished-at="2023-06-14T17:17:27 BDT" duration-ms="825" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:27 BDT" name="setBrowser" finished-at="2023-06-14T17:17:28 BDT" duration-ms="1175" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="indeminificationTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:28 BDT" name="indeminificationTittleVerify" finished-at="2023-06-14T17:17:34 BDT" duration-ms="6187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- indeminificationTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:34 BDT" name="closeBrowser" finished-at="2023-06-14T17:17:35 BDT" duration-ms="764" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:35 BDT" name="setBrowser" finished-at="2023-06-14T17:17:36 BDT" duration-ms="1202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="intellectualPropertyTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:36 BDT" name="intellectualPropertyTittleVerify" finished-at="2023-06-14T17:17:43 BDT" duration-ms="6271" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intellectualPropertyTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:43 BDT" name="closeBrowser" finished-at="2023-06-14T17:17:44 BDT" duration-ms="839" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:44 BDT" name="setBrowser" finished-at="2023-06-14T17:17:45 BDT" duration-ms="1797" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="limitationofLiabilityTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:45 BDT" name="limitationofLiabilityTittleVerify" finished-at="2023-06-14T17:17:51 BDT" duration-ms="5381" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- limitationofLiabilityTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:51 BDT" name="closeBrowser" finished-at="2023-06-14T17:17:51 BDT" duration-ms="794" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:51 BDT" name="setBrowser" finished-at="2023-06-14T17:17:53 BDT" duration-ms="1660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="miscellaneousTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:53 BDT" name="miscellaneousTittleVerify" finished-at="2023-06-14T17:17:58 BDT" duration-ms="5113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- miscellaneousTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:58 BDT" name="closeBrowser" finished-at="2023-06-14T17:17:59 BDT" duration-ms="782" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:17:59 BDT" name="setBrowser" finished-at="2023-06-14T17:18:01 BDT" duration-ms="1713" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="modificationsInteruptionsTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:01 BDT" name="modificationsInteruptionsTittleVerify" finished-at="2023-06-14T17:18:09 BDT" duration-ms="7917" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modificationsInteruptionsTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:09 BDT" name="closeBrowser" finished-at="2023-06-14T17:18:10 BDT" duration-ms="1248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:10 BDT" name="setBrowser" finished-at="2023-06-14T17:18:12 BDT" duration-ms="1677" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="privacyPolicyTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:12 BDT" name="privacyPolicyTittleVerify" finished-at="2023-06-14T17:18:20 BDT" duration-ms="8020" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- privacyPolicyTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:20 BDT" name="closeBrowser" finished-at="2023-06-14T17:18:21 BDT" duration-ms="1255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:21 BDT" name="setBrowser" finished-at="2023-06-14T17:18:23 BDT" duration-ms="1634" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="prohibitedActivitiesTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:23 BDT" name="prohibitedActivitiesTittleVerify" finished-at="2023-06-14T17:18:28 BDT" duration-ms="5919" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- prohibitedActivitiesTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:28 BDT" name="closeBrowser" finished-at="2023-06-14T17:18:30 BDT" duration-ms="1206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:30 BDT" name="setBrowser" finished-at="2023-06-14T17:18:31 BDT" duration-ms="1648" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="siteManangementTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:31 BDT" name="siteManangementTittleVerify" finished-at="2023-06-14T17:18:36 BDT" duration-ms="4757" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- siteManangementTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:36 BDT" name="closeBrowser" finished-at="2023-06-14T17:18:37 BDT" duration-ms="770" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:37 BDT" name="setBrowser" finished-at="2023-06-14T17:18:38 BDT" duration-ms="1599" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="submissionTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:38 BDT" name="submissionTittleVerify" finished-at="2023-06-14T17:18:45 BDT" duration-ms="6668" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submissionTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:45 BDT" name="closeBrowser" finished-at="2023-06-14T17:18:46 BDT" duration-ms="776" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:46 BDT" name="setBrowser" finished-at="2023-06-14T17:18:48 BDT" duration-ms="1828" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="termTerminationTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:48 BDT" name="termTerminationTittleVerify" finished-at="2023-06-14T17:18:54 BDT" duration-ms="6491" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- termTerminationTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:54 BDT" name="closeBrowser" finished-at="2023-06-14T17:18:55 BDT" duration-ms="1242" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:55 BDT" name="setBrowser" finished-at="2023-06-14T17:18:57 BDT" duration-ms="1692" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="topButtonTest()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:18:57 BDT" name="topButtonTest" finished-at="2023-06-14T17:19:06 BDT" duration-ms="8946" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- topButtonTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:06 BDT" name="closeBrowser" finished-at="2023-06-14T17:19:07 BDT" duration-ms="772" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:07 BDT" name="setBrowser" finished-at="2023-06-14T17:19:08 BDT" duration-ms="1144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="userDataTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:08 BDT" name="userDataTittleVerify" finished-at="2023-06-14T17:19:14 BDT" duration-ms="6486" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userDataTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:14 BDT" name="closeBrowser" finished-at="2023-06-14T17:19:15 BDT" duration-ms="779" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:15 BDT" name="setBrowser" finished-at="2023-06-14T17:19:16 BDT" duration-ms="1172" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="userGeneratedTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:16 BDT" name="userGeneratedTittleVerify" finished-at="2023-06-14T17:19:22 BDT" duration-ms="5867" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userGeneratedTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:22 BDT" name="closeBrowser" finished-at="2023-06-14T17:19:24 BDT" duration-ms="1228" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:24 BDT" name="setBrowser" finished-at="2023-06-14T17:19:25 BDT" duration-ms="1156" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="userRegistrationTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:25 BDT" name="userRegistrationTittleVerify" finished-at="2023-06-14T17:19:33 BDT" duration-ms="7919" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userRegistrationTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:33 BDT" name="closeBrowser" finished-at="2023-06-14T17:19:34 BDT" duration-ms="1249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:34 BDT" name="setBrowser" finished-at="2023-06-14T17:19:35 BDT" duration-ms="1093" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowser -->
-        <test-method signature="userRepresentationsTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:35 BDT" name="userRepresentationsTittleVerify" finished-at="2023-06-14T17:19:44 BDT" duration-ms="8589" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userRepresentationsTittleVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@6340e5f0]" started-at="2023-06-14T17:19:44 BDT" name="closeBrowser" finished-at="2023-06-14T17:19:45 BDT" duration-ms="1249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.TermConditionTestCases -->
+      </class> <!-- testcases.DashboardProfilePageTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
