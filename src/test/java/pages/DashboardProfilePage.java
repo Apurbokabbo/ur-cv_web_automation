@@ -27,6 +27,7 @@ public class DashboardProfilePage extends BasePage{
 	public By PERSONAL_INFO_SAVE_BUTTON=By.xpath("//button[contains(text(),'Save')]"); 
 	public By PERSONAL_INFO_PROFILE_IMAGE_UPLOAD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/span[1]"); 
 	public By PEROSNAL_INFO_IMAGE_LOAD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]"); 
+	public By PEROSNAL_INFO_IMAGE_SAVE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[2]/a[2]"); 
 	public By PERSONAL_INFO_IMAGE_CANCEL_BUTTON=By.xpath("//a[contains(text(),'Cancel')]"); 
 	public By PERSONAL_INFO_IMAGE_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/i[1]"); 
 	public By PERSONAL_INFO_IMAGE_UPLOAD_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/i[1]"); 

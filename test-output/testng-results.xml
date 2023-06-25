@@ -2,16 +2,16 @@
 <testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-18T17:16:21 BDT" name="Default suite" finished-at="2023-06-18T17:16:34 BDT" duration-ms="12718">
+  <suite started-at="2023-06-26T04:32:31 BDT" name="Default suite" finished-at="2023-06-26T04:32:51 BDT" duration-ms="19611">
     <groups>
     </groups>
-    <test started-at="2023-06-18T17:16:21 BDT" name="Default test" finished-at="2023-06-18T17:16:34 BDT" duration-ms="12718">
+    <test started-at="2023-06-26T04:32:31 BDT" name="Default test" finished-at="2023-06-26T04:32:51 BDT" duration-ms="19611">
       <class name="testcases.DashboardProfilePageTestCases">
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@7b36aa0c]" started-at="2023-06-18T17:16:21 BDT" name="setBrowser" finished-at="2023-06-18T17:16:24 BDT" duration-ms="2690" status="PASS">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@7b36aa0c]" started-at="2023-06-26T04:32:31 BDT" name="setBrowser" finished-at="2023-06-26T04:32:34 BDT" duration-ms="2563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method signature="uploadProfileImage()[pri:0, instance:testcases.DashboardProfilePageTestCases@7b36aa0c]" started-at="2023-06-18T17:16:24 BDT" name="uploadProfileImage" finished-at="2023-06-18T17:16:33 BDT" duration-ms="8722" status="FAIL">
+        <test-method signature="uploadProfileImage()[pri:0, instance:testcases.DashboardProfilePageTestCases@7b36aa0c]" started-at="2023-06-26T04:32:34 BDT" name="uploadProfileImage" finished-at="2023-06-26T04:32:50 BDT" duration-ms="15774" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
@@ -19,10 +19,10 @@
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [caae8069329d147e670f069b66b35d05, sendKeysToElement {id=76DE6DF7ACD657BC22F437437526F1DE_element_70, value=[Ljava.lang.CharSequence;@7c36db44}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\APURBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56893/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (caae8069329d147e670f069b66b35d05)] -> xpath: //body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]]
-Session ID: caae8069329d147e670f069b66b35d05]]>
+Command: [07109bf5af65afafa5869ac05fff17cf, sendKeysToElement {id=9F8EAC97B1E68FEA0AAC78360F2534EF_element_78, value=[Ljava.lang.CharSequence;@10643593}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\APURBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (07109bf5af65afafa5869ac05fff17cf)] -> xpath: //body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]]
+Session ID: 07109bf5af65afafa5869ac05fff17cf]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -30,10 +30,10 @@ Session ID: caae8069329d147e670f069b66b35d05]]>
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [caae8069329d147e670f069b66b35d05, sendKeysToElement {id=76DE6DF7ACD657BC22F437437526F1DE_element_70, value=[Ljava.lang.CharSequence;@7c36db44}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\APURBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56893/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (caae8069329d147e670f069b66b35d05)] -> xpath: //body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]]
-Session ID: caae8069329d147e670f069b66b35d05
+Command: [07109bf5af65afafa5869ac05fff17cf, sendKeysToElement {id=9F8EAC97B1E68FEA0AAC78360F2534EF_element_78, value=[Ljava.lang.CharSequence;@10643593}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\APURBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (07109bf5af65afafa5869ac05fff17cf)] -> xpath: //body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]]
+Session ID: 07109bf5af65afafa5869ac05fff17cf
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -48,7 +48,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-at testcases.DashboardProfilePageTestCases.uploadProfileImage(DashboardProfilePageTestCases.java:50)
+at testcases.DashboardProfilePageTestCases.uploadProfileImage(DashboardProfilePageTestCases.java:48)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,7 +83,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadProfileImage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@7b36aa0c]" started-at="2023-06-18T17:16:33 BDT" name="closeBrowser" finished-at="2023-06-18T17:16:34 BDT" duration-ms="1226" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@7b36aa0c]" started-at="2023-06-26T04:32:50 BDT" name="closeBrowser" finished-at="2023-06-26T04:32:51 BDT" duration-ms="1195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
