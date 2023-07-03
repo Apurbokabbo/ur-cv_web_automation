@@ -16,7 +16,7 @@ public class RegisterPage extends BasePage{
 	public String PASSWORD_VALIDATION_TEXT="The password field is required";
 	public String USER_NAME="Test Id";
 	public String Password="123456";
-	public String Mail="testing12345@gmail.com";
+	public String Mail="kii@gmail.com";
 	
 	
 	

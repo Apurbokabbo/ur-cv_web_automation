@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 public class DashboardProfilePage extends BasePage{
 	
 	public String PROFILE_PAGE_URL = "https://ur-cv.com/dashboard/my-profile";
+	public String PERSONAL_INFO_DESIGNATION_SEARCH_KEY = "SQA";
+	public String PERSONAL_INFO_ADDRESS_INPUT = "Mirpur dohs , Dhaka , Bangladesh";
 	public String PROFESSIONAL_CERTIFICATE_SUGGESTION_KEY="AV";
 	public String SKILL_LEVEL_VALIDATION_TEXT="The skill level field is required";
 	public String SKILL_NAME_VALIDATION_TEXT="The skill name field is required";
@@ -17,6 +19,8 @@ public class DashboardProfilePage extends BasePage{
 	public String LANGUAGE_PROFICIENCY_NAME_VALIDATION_TEXT="The language name field is required";
 	public String LANGUAGE_PROFICIENCY_TYPE_VALIDATION_TEXT="The language proficiency field is required";
 	public String SOCIAL_MEDIA_VALIDATION_TEXT="The social link field is required";
+	public String DESIGNATION_VALIDATION_TEXT="The designation name field is required";
+	public String MAILING_ADDRESS_VALIDATION_TEXT="The mailing address field is required";
 	
 	
 	
@@ -26,18 +30,24 @@ public class DashboardProfilePage extends BasePage{
 	public By PERSONAL_INFO_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/button[1]"); 
 	public By PERSONAL_INFO_SAVE_BUTTON=By.xpath("//button[contains(text(),'Save')]"); 
 	public By PERSONAL_INFO_PROFILE_IMAGE_UPLOAD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/span[1]"); 
-	public By PEROSNAL_INFO_IMAGE_LOAD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]"); 
-	public By PEROSNAL_INFO_IMAGE_SAVE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[2]/a[2]"); 
+	public By PEROSNAL_INFO_IMAGE_LOAD_BUTTON=By.xpath("//span[contains(text(),'Click or drag the file here to upload')]"); 
+	public By PEROSNAL_INFO_IMAGE_SAVE_BUTTON=By.xpath("//a[contains(text(),'Save')]"); 
 	public By PERSONAL_INFO_IMAGE_CANCEL_BUTTON=By.xpath("//a[contains(text(),'Cancel')]"); 
+	public By PERSONAL_INFO_DESINATION_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The designation name field is required')]"); 
+	public By PERSONAL_INFO_MAILLING_ADDRESS_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The mailing address field is required')]"); 
 	public By PERSONAL_INFO_IMAGE_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/i[1]"); 
 	public By PERSONAL_INFO_IMAGE_UPLOAD_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/i[1]"); 
+	public By PERSONAL_INFO_IMAGE_UPLOIAD_MODAL_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[2]/a[2]"); 	
 	public By PERSONAL_INFO_FULLNAME_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/input[1]"); 
-	public By PERSONAL_INFO_DESIGNATION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/input[1]"); 
+	public By PERSONAL_INFO_DESIGNATION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/input[1]"); 
+	public By PERSONAL_INFO_MAILLING_ADDRESS_LOCATOR_VERIFY=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/p[2]"); 
+	public By PERSONAL_INFO_SELECT_DESIGNATION=By.xpath("//p[contains(text(),'SQA Engineer')]"); 
 	public By PERSONAL_INFO_MOBILE_INPUT_FIELD =By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/input[1]"); 
 	public By PERSONAL_INFO_MOBILE_PLUS_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/button[1]"); 
-	public By PERSONAL_INFO_EMAIL_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[4]/div[1]/div[1]/div[1]/input[1]"); 
+	public By PERSONAL_INFO_EMAIL_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[5]/div[1]/div[1]/textarea[1]"); 
 	public By PERSONAL_INFO_EMAIL_PLUS_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[4]/div[1]/div[2]/button[1]"); 
 	public By PERSONAL_INFO_MAILLING_ADDRESS_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[5]/div[1]/div[1]/textarea[1]"); 
+	public By PERSONAL_INFO_MAILLING_ADDRESS_EDIT_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/p[2]/a[1]/span[1]"); 
 	public By PERSONAL_SUMMARY_ADDorEDIT_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/p[2]/a[1]"); 
 	public By PERSONAL_SUMMARY_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]"); 
 	public By PERSONAL_SUMMARY_GET_SUGGESTION_BUTTON=By.xpath("//button[contains(text(),'suggestion')]"); 
