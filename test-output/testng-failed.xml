@@ -5,9 +5,9 @@
     <classes>
       <class name="testcases.DashboardProfilePageTestCases">
         <methods>
+          <include name="personalSummrySuggestionClosebuttonVerify"/>
           <include name="setBrowser"/>
           <include name="closeBrowser"/>
-          <include name="personalInfoDesignationandMaillingAddressVeridy"/>
         </methods>
       </class> <!-- testcases.DashboardProfilePageTestCases -->
     </classes>

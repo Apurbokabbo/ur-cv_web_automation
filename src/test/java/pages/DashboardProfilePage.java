@@ -30,7 +30,7 @@ public class DashboardProfilePage extends BasePage{
 	public By PERSONAL_INFO_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/button[1]"); 
 	public By PERSONAL_INFO_SAVE_BUTTON=By.xpath("//button[contains(text(),'Save')]"); 
 	public By PERSONAL_INFO_PROFILE_IMAGE_UPLOAD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/span[1]"); 
-	public By PEROSNAL_INFO_IMAGE_LOAD_BUTTON=By.xpath("//span[contains(text(),'Click or drag the file here to upload')]"); 
+	public By PEROSNAL_INFO_IMAGE_LOAD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/input[1]"); 
 	public By PEROSNAL_INFO_IMAGE_SAVE_BUTTON=By.xpath("//a[contains(text(),'Save')]"); 
 	public By PERSONAL_INFO_IMAGE_CANCEL_BUTTON=By.xpath("//a[contains(text(),'Cancel')]"); 
 	public By PERSONAL_INFO_DESINATION_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The designation name field is required')]"); 
@@ -53,7 +53,7 @@ public class DashboardProfilePage extends BasePage{
 	public By PERSONAL_SUMMARY_GET_SUGGESTION_BUTTON=By.xpath("//button[contains(text(),'suggestion')]"); 
 	public By PERSONAL_SUMMARY_SAVE_BUTTON=By.xpath("//button[contains(text(),'Save')]"); 
 	public By PERSONAL_SUMMARY_SUGGESTION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
-	public By PERSONAL_SUMMARY_SUGGESTION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]/span[3]"); 
+	public By PERSONAL_SUMMARY_SUGGESTION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]"); 
 	public By PERSONAL_SUMMARY_SUGGESTION_SCTROLL_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[5]"); 
 	public By PERSONAL_SUMMARY_SUGGESTION_SELECT_LOCATOR=By.xpath("//p[contains(text(),'years of experience working in ')]"); 
 	public By WORK_EXPERENCE_ADDor_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/p[2]/a[1]"); 
