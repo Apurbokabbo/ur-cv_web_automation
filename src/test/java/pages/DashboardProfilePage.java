@@ -55,7 +55,8 @@ public class DashboardProfilePage extends BasePage{
 	public By PERSONAL_SUMMARY_SUGGESTION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
 	public By PERSONAL_SUMMARY_SUGGESTION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]"); 
 	public By PERSONAL_SUMMARY_SUGGESTION_SCTROLL_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[5]"); 
-	public By PERSONAL_SUMMARY_SUGGESTION_SELECT_LOCATOR=By.xpath("//p[contains(text(),'years of experience working in ')]"); 
+	public By PERSONAL_SUMMARY_SUGGESTION_SELECT_LOCATOR=By.xpath("//p[contains(text(),'Aiming for a demanding job in a multinational comp')]"); 
+	public By PERSONAL_SUMMARY_SUGGESTION_PROFESSION_SELECT_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/div[1]/p[1]"); 
 	public By WORK_EXPERENCE_ADDor_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/p[2]/a[1]"); 
 	public By WORK_EXPERENCE_ADD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/span[1]"); 
 	public By WORK_EXPERENCE_DELETE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[2]/span[2]"); 

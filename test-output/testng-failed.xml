@@ -5,8 +5,8 @@
     <classes>
       <class name="testcases.DashboardProfilePageTestCases">
         <methods>
-          <include name="personalSummrySuggestionClosebuttonVerify"/>
           <include name="setBrowser"/>
+          <include name="personalSummaryAddFromSegguestion"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- testcases.DashboardProfilePageTestCases -->

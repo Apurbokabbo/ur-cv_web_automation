@@ -2,20 +2,20 @@
 <testng-results ignored="13" total="14" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-05T19:01:28 BDT" name="Default suite" finished-at="2023-07-05T19:01:47 BDT" duration-ms="19011">
+  <suite started-at="2023-07-12T12:40:46 BDT" name="Default suite" finished-at="2023-07-12T12:41:14 BDT" duration-ms="27798">
     <groups>
     </groups>
-    <test started-at="2023-07-05T19:01:28 BDT" name="Default test" finished-at="2023-07-05T19:01:47 BDT" duration-ms="19011">
+    <test started-at="2023-07-12T12:40:46 BDT" name="Default test" finished-at="2023-07-12T12:41:14 BDT" duration-ms="27798">
       <class name="testcases.DashboardProfilePageTestCases">
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@e350b40]" started-at="2023-07-05T19:01:28 BDT" name="setBrowser" finished-at="2023-07-05T19:01:31 BDT" duration-ms="2378" status="PASS">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@2bb3058]" started-at="2023-07-12T12:40:46 BDT" name="setBrowser" finished-at="2023-07-12T12:40:49 BDT" duration-ms="2531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method signature="personalSummaryAddFromSegguestion()[pri:0, instance:testcases.DashboardProfilePageTestCases@e350b40]" started-at="2023-07-05T19:01:31 BDT" name="personalSummaryAddFromSegguestion" finished-at="2023-07-05T19:01:46 BDT" duration-ms="15828" status="PASS">
+        <test-method signature="personalSummaryAddFromSegguestion()[pri:0, instance:testcases.DashboardProfilePageTestCases@2bb3058]" started-at="2023-07-12T12:40:49 BDT" name="personalSummaryAddFromSegguestion" finished-at="2023-07-12T12:41:13 BDT" duration-ms="24337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- personalSummaryAddFromSegguestion -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@e350b40]" started-at="2023-07-05T19:01:46 BDT" name="closeBrowser" finished-at="2023-07-05T19:01:47 BDT" duration-ms="738" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@2bb3058]" started-at="2023-07-12T12:41:13 BDT" name="closeBrowser" finished-at="2023-07-12T12:41:14 BDT" duration-ms="747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

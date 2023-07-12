@@ -235,8 +235,20 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_ADDorEDIT_BUTTON).click();
 		Thread.sleep(1000);
-		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_SUGGESTION_INPUT_FIELD).sendKeys("SQA Engineer ");
-		Thread.sleep(8000);
+		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_INPUT_FIELD).clear();
+		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_SUGGESTION_INPUT_FIELD).sendKeys("SQA Engineer");
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_SUGGESTION_INPUT_FIELD).sendKeys(" ");
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_SUGGESTION_PROFESSION_SELECT_LOCATOR).click();
+		Thread.sleep(10000);
+		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_SUGGESTION_SELECT_LOCATOR).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_SAVE_BUTTON).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.takeScreenShotAllureAttach("Test Screenhot");
 	}
+	
+	
 
 }

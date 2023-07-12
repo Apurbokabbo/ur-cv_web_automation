@@ -3,13 +3,20 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
+
+import io.qameta.allure.Allure;
+
 import static org.testng.Assert.assertEquals;
 import static utilities.BaseDriver.getDriver;
+
+import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -287,6 +294,11 @@ public class BasePage {
 	public void scrolldown() {
 		JavascriptExecutor js = (JavascriptExecutor) getDriver();
 		js.executeScript("window.scrollBy(0,350)", "");	
+	}
+	
+	public void takeScreenShotAllureAttach(String screenshotname) {
+		Allure.addAttachment(screenshotname, new ByteArrayInputStream(((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.BYTES)));
+		
 	}
 	
 	
