@@ -221,7 +221,7 @@ public class BasePage {
 		
 	}
 	
-	public void findlTotalElement(String tagName) 
+	public void findTotalElement(String tagName) 
 	{
 		List<WebElement> elements = getDriver().findElements(By.tagName(tagName));
 		System.out.println(elements.size());	
@@ -244,12 +244,19 @@ public class BasePage {
 	public void keyboardSelectAll(By locator) 
 	{
 		Actions action =  new Actions(getDriver());
-		findElement(locator);
+		findElement(locator).click();
 		action.keyDown(Keys.CONTROL);
 		action.sendKeys("a");
 		action.keyUp(Keys.CONTROL);
 		action.build().perform();
 		
+	}
+	
+	public void keyboardBackspace() 
+	{
+		Actions action =  new Actions(getDriver());
+		action.keyDown(Keys.BACK_SPACE);
+		action.build().perform();
 	}
 	
 	public void keyboardCopy(By locator) 
@@ -300,6 +307,8 @@ public class BasePage {
 		Allure.addAttachment(screenshotname, new ByteArrayInputStream(((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.BYTES)));
 		
 	}
+	
+	
 	
 	
 	

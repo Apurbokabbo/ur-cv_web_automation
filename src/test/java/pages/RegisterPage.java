@@ -15,8 +15,9 @@ public class RegisterPage extends BasePage{
 	public String PASSWORD_VALIDATION_INVALID_TEXT="The password field must be at least 6 characters";
 	public String PASSWORD_VALIDATION_TEXT="The password field is required";
 	public String USER_NAME="Test Id";
-	public String Password="123456";
-	public String Mail="kii@gmail.com";
+	public String PASSWORD="123456";
+	public String MAIL="kii@gmail.com";
+	public String MAIL_CART_PAGE_REGISTRATION="r6@gmail.com";
 	
 	
 	

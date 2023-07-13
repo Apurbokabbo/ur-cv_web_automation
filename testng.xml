@@ -5,7 +5,12 @@
     <classes>
       <class name="testcases.LandingTestCases"/>
       <class name="testcases.AboutTestCases"/>
+      <class name="testcases.TermConditionTestCases"/>
+      <class name="testcases.BlogPageTestCase"/>
+      <class name="testcases.PrivacyPoliceTestCases"/>
       <class name="testcases.LoginTestCases"/>
+      <class name="testcases.FaqPageTestCases"/>
+      <class name="testcases.DashboardProfilePageTestCases"/>
       <class name="testcases.RegisterTestCases"/>
       <class name="testcases.TemplatesTestCases"/>
     </classes>

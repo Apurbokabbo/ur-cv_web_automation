@@ -19,7 +19,7 @@ public class RegisterTestCases extends BaseDriver {
 	public void registerWithValidData() throws InterruptedException {
 
 		getDriver().get(registerPage.REGISTER_URL);
-		registerPage.registerWithValidDataCreateNewUsers("a3@gmail.com", "A1", "01502000000", "123456");
+		registerPage.registerWithValidDataCreateNewUsers(registerPage.MAIL, "A1", "01502000000", registerPage.PASSWORD);
 		Thread.sleep(2000);
 		registerPage.assertionURL(registerPage.REGISTER_MY_PROFILE_URL);
 
@@ -155,7 +155,7 @@ public class RegisterTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		loginPage.findElement(loginPage.CREATE_ACCOUNT).click();
 		Thread.sleep(1000);
-		registerPage.registerWithValidDataCreateNewUsers("r4@gmail.com","R1","01902020000","123456"); 
+		registerPage.registerWithValidDataCreateNewUsers(registerPage.MAIL_CART_PAGE_REGISTRATION,"R1","01902020000",registerPage.PASSWORD); 
 		Thread.sleep(2000);
 		registerPage.assertionURL(cartPage.CART_URL);
 		Thread.sleep(1000);

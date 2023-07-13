@@ -390,7 +390,7 @@ public class LandingTestCases extends BaseDriver {
 		landingPage.scrollingDownTillElementFound(landingPage.FAQ_TITTLE_LOCATOR);
 		Thread.sleep(2000);
 		landingPage.assertionHard(landingPage.FAQ_TITTLE_LOCATOR, landingPage.FQA_TITTLE_TEXT);
-		Thread.sleep(1000);
+		
 		
 	}
 	
@@ -399,9 +399,9 @@ public class LandingTestCases extends BaseDriver {
 		getDriver().get(landingPage.BASE_URL);
 		Thread.sleep(1000);
 		landingPage.scrollingDownTillElementFound(landingPage.FAQ_TITTLE_LOCATOR);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		landingPage.assertionHard(landingPage.FAQ_QUESTION_TITLE_1_LOCATOR, landingPage.FAQ_QUESTION_1_TITLE);
-		Thread.sleep(1000);
+		
 		
 	}
 	
@@ -412,7 +412,7 @@ public class LandingTestCases extends BaseDriver {
 		landingPage.scrollingDownTillElementFound(landingPage.FAQ_TITTLE_LOCATOR);
 		Thread.sleep(2000);
 		landingPage.assertionHard(landingPage.FAQ_QUESTION_TITLE_2_LOCATOR, landingPage.FAQ_QUESTION_2_TITLE);
-		Thread.sleep(1000);
+	
 		
 	}
 	
@@ -563,7 +563,7 @@ public class LandingTestCases extends BaseDriver {
 		landingPage.scrollingDownTillElementFound(landingPage.FAQ_TITTLE_LOCATOR);
 		Thread.sleep(1000);
 		landingPage.findElement(landingPage.FIND_MORE_FAQ_BUTTON).click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		landingPage.assertionURL("https://ur-cv.com/frequently-ask-question");
 		Thread.sleep(1000);
 		

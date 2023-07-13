@@ -11,6 +11,13 @@
           <include name="registerFromCartPage"/>
         </methods>
       </class> <!-- testcases.RegisterTestCases -->
+      <class name="testcases.DashboardProfilePageTestCases">
+        <methods>
+          <include name="setBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="personalInfoDesignationEditButtonVerify"/>
+        </methods>
+      </class> <!-- testcases.DashboardProfilePageTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

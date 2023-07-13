@@ -34,6 +34,9 @@ public class DashboardProfilePage extends BasePage{
 	public By PEROSNAL_INFO_IMAGE_SAVE_BUTTON=By.xpath("//a[contains(text(),'Save')]"); 
 	public By PERSONAL_INFO_IMAGE_CANCEL_BUTTON=By.xpath("//a[contains(text(),'Cancel')]"); 
 	public By PERSONAL_INFO_DESINATION_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The designation name field is required')]"); 
+	public By PERSONAL_INFO_EMAIL_LOCATOR=By.xpath("//p[contains(text(),'@gmail.com')]"); 
+	public By PERSONAL_INFO_ADDRESS_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/p[2]"); 
+	public By PERSONAL_INFO_DESIGNATION_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/p[2]"); 
 	public By PERSONAL_INFO_MAILLING_ADDRESS_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The mailing address field is required')]"); 
 	public By PERSONAL_INFO_IMAGE_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/i[1]"); 
 	public By PERSONAL_INFO_IMAGE_UPLOAD_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/i[1]"); 

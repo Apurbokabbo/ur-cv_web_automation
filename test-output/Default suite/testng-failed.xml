@@ -6,8 +6,8 @@
       <class name="testcases.DashboardProfilePageTestCases">
         <methods>
           <include name="setBrowser"/>
-          <include name="personalSummaryAddFromSegguestion"/>
           <include name="closeBrowser"/>
+          <include name="personalInfoDesignationEditButtonVerify"/>
         </methods>
       </class> <!-- testcases.DashboardProfilePageTestCases -->
     </classes>

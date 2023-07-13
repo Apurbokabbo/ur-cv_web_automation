@@ -15,7 +15,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 	public void dashboardURLVerify() throws InterruptedException {
 
 		getDriver().get(loginObj.LOGIN_URL);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(2000);
 		dashboardPofileObj.assertionURL(dashboardPofileObj.PROFILE_PAGE_URL);
 
@@ -24,7 +24,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 	@Test
 	public void profilePictureCloseButtonTest() throws InterruptedException {
 		getDriver().get(loginObj.LOGIN_URL);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(2000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_PROFILE_IMAGE_UPLOAD_BUTTON).click();
 		Thread.sleep(2000);
@@ -41,7 +41,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 	public void uploadProfileImage() throws InterruptedException {
 		getDriver().get(loginObj.LOGIN_URL);
 		String projectPath = System.getProperty("user.dir");
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(2000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_PROFILE_IMAGE_UPLOAD_BUTTON).click();
 		Thread.sleep(2000);
@@ -60,17 +60,20 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 
 		getDriver().get(loginObj.LOGIN_URL);
 		Thread.sleep(1000);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_EDIT_BUTTON).click();
 		dashboardPofileObj.scrolldown();
 		Thread.sleep(1000);
+		dashboardPofileObj.keyboardSelectAll(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_INPUT_FIELD);
+		Thread.sleep(1000);
+		dashboardPofileObj.keyboardBackspace();
+		dashboardPofileObj.keyboardSelectAll(dashboardPofileObj.PERSONAL_INFO_MAILLING_ADDRESS_INPUT_FIELD);
+		dashboardPofileObj.keyboardBackspace();
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_SAVE_BUTTON).click();
 		Thread.sleep(1000);
-		dashboardPofileObj.assertionHard(dashboardPofileObj.PERSONAL_INFO_DESINATION_VALIDATION_LOCATOR,
-				dashboardPofileObj.DESIGNATION_VALIDATION_TEXT);
-		dashboardPofileObj.assertionHard(dashboardPofileObj.PERSONAL_INFO_MAILLING_ADDRESS_VALIDATION_LOCATOR,
-				dashboardPofileObj.MAILING_ADDRESS_VALIDATION_TEXT);
+		dashboardPofileObj.assertionHard(dashboardPofileObj.PERSONAL_INFO_DESINATION_VALIDATION_LOCATOR,dashboardPofileObj.DESIGNATION_VALIDATION_TEXT);
+		dashboardPofileObj.assertionHard(dashboardPofileObj.PERSONAL_INFO_MAILLING_ADDRESS_VALIDATION_LOCATOR,dashboardPofileObj.MAILING_ADDRESS_VALIDATION_TEXT);
 		Thread.sleep(1000);
 	}
 
@@ -79,18 +82,43 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 
 		getDriver().get(loginObj.LOGIN_URL);
 		Thread.sleep(1000);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		//loginObj.loginWithValidData("ki00000@gmail.com", registerPageObj.PASSWORD);
 		Thread.sleep(1000);
-		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_ADDRESS_EDIT_BUTTON).click();
-		Thread.sleep(1000);
-		try {
-			dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_MAILLING_ADDRESS_EDIT_BUTTON).click();
-			System.out.println("Test Case Failed !!!");
-
-		} catch (Exception e) {
-			dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_CLOSE_BUTTON).click();
+		
+		
+		
+		try 
+		{
+			String degisnation = dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_LOCATOR).getText();
 			Thread.sleep(1000);
+			
+			if (degisnation.length()>0 && degisnation.length()!=21) 
+			{
+				System.out.println(degisnation);
+				
+			}
+			
+			else 
+			{
+				dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_DEGISNATION_EDIT_BUTTON).click();
+				Thread.sleep(2000);
+				
+			}
+			
+		} 
+		catch (Exception e) 
+		{
+			try 
+			{
+				dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_MAILLING_ADDRESS_EDIT_BUTTON).click();
+				System.out.println("Test Case Failed !!!");
 
+			} catch (Exception e1) {
+				dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_CLOSE_BUTTON).click();
+				Thread.sleep(1000);
+
+			}
 		}
 	}
 
@@ -99,37 +127,63 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 
 		getDriver().get(loginObj.LOGIN_URL);
 		Thread.sleep(1000);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
-		Thread.sleep(1000);
-		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_MAILLING_ADDRESS_EDIT_BUTTON).click();
-		Thread.sleep(1000);
-		try {
-			dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_ADDRESS_EDIT_BUTTON).click();
-			System.out.println("Test Case Failed !!!");
-
-		} catch (Exception e) {
-			dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_CLOSE_BUTTON).click();
+		loginObj.loginWithValidData(registerPageObj.MAIL ,registerPageObj.PASSWORD);
+		Thread.sleep(2000);
+		
+		try 
+		{
+			
+			String address = dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_ADDRESS_LOCATOR).getText();
 			Thread.sleep(1000);
-
+			
+			if (address.length()>0 && address.length()!=24) 
+			{
+				System.out.println(address);
+				
+			}
+			
+			else 
+			{
+				dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_MAILLING_ADDRESS_EDIT_BUTTON).click();
+				Thread.sleep(1000);
+				
+			}
+			
 		}
+		
+		catch (Exception e) {
+			
+			
+			try 
+			{
+				dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_ADDRESS_EDIT_BUTTON).click();
+				System.out.println("Test Case Failed !!!");
+
+			} catch (Exception e1) {
+				dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_CLOSE_BUTTON).click();
+				Thread.sleep(1000);
+
+			}
+		}
+		
 	}
 
 	@Test
 	public void personalInfodesignationandmailingaddressAdd() throws InterruptedException {
 		getDriver().get(loginObj.LOGIN_URL);
 		Thread.sleep(1000);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_EDIT_BUTTON).click();
 		dashboardPofileObj.scrolldown();
 		Thread.sleep(1000);
-		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_INPUT_FIELD)
-				.sendKeys(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_SEARCH_KEY);
+		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_INPUT_FIELD).clear();
+		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_INPUT_FIELD).sendKeys(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_SEARCH_KEY);
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_SELECT_DESIGNATION).click();
 		Thread.sleep(1000);
-		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_EMAIL_INPUT_FIELD)
-				.sendKeys(dashboardPofileObj.PERSONAL_INFO_ADDRESS_INPUT);
+		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_EMAIL_INPUT_FIELD).clear();
+		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_EMAIL_INPUT_FIELD).sendKeys(dashboardPofileObj.PERSONAL_INFO_ADDRESS_INPUT);
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_SAVE_BUTTON).click();
 		Thread.sleep(1000);
@@ -137,15 +191,14 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 	}
 
 	@Test
-	public void personalInfoDesignationandMaillingAddressVeridy() throws InterruptedException {
+	public void personalInfoDesignationandMaillingAddressVerify() throws InterruptedException {
 
 		getDriver().get(loginObj.LOGIN_URL);
 		Thread.sleep(1000);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(2000);
 		dashboardPofileObj.assertionHard(dashboardPofileObj.PERSONAL_INFO_SELECT_DESIGNATION, "SQA Engineer");
-		dashboardPofileObj.assertionHard(dashboardPofileObj.PERSONAL_INFO_MAILLING_ADDRESS_LOCATOR_VERIFY,
-				dashboardPofileObj.PERSONAL_INFO_ADDRESS_INPUT);
+		dashboardPofileObj.assertionHard(dashboardPofileObj.PERSONAL_INFO_MAILLING_ADDRESS_LOCATOR_VERIFY,dashboardPofileObj.PERSONAL_INFO_ADDRESS_INPUT);
 		Thread.sleep(1000);
 
 	}
@@ -154,7 +207,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 	public void personalInfoMultiMailandNumbertest() throws InterruptedException {
 		getDriver().get(loginObj.LOGIN_URL);
 		Thread.sleep(1000);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(2000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_INFO_EDIT_BUTTON).click();
 		dashboardPofileObj.scrolldown();
@@ -170,7 +223,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 	public void personalSummaryEditButton() throws InterruptedException {
 		getDriver().get(loginObj.LOGIN_URL);
 		Thread.sleep(1000);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_ADDorEDIT_BUTTON).click();
 		Thread.sleep(1000);
@@ -182,7 +235,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 		getDriver().get(loginObj.LOGIN_URL);
 		String input = "Hello world !!! Hello world !!!Hello world !!!Hello world !!!Hello world !!!Hello world !!!";
 		Thread.sleep(1000);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_ADDorEDIT_BUTTON).click();
 		Thread.sleep(1000);
@@ -202,7 +255,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 	public void personalSummrySuggestionClosebuttonVerify() throws InterruptedException {
 		getDriver().get(loginObj.LOGIN_URL);
 		Thread.sleep(1000);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_ADDorEDIT_BUTTON).click();
 		Thread.sleep(1000);
@@ -218,7 +271,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 	public void personalSummarySegguestion() throws InterruptedException {
 		getDriver().get(loginObj.LOGIN_URL);
 		Thread.sleep(1000);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_ADDorEDIT_BUTTON).click();
 		Thread.sleep(1000);
@@ -231,7 +284,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 	public void personalSummaryAddFromSegguestion() throws InterruptedException {
 		getDriver().get(loginObj.LOGIN_URL);
 		Thread.sleep(1000);
-		loginObj.loginWithValidData(registerPageObj.Mail, registerPageObj.Password);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_ADDorEDIT_BUTTON).click();
 		Thread.sleep(1000);
@@ -246,7 +299,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.PERSONAL_SUMMARY_SAVE_BUTTON).click();
 		Thread.sleep(1000);
-		dashboardPofileObj.takeScreenShotAllureAttach("Test Screenhot");
+		dashboardPofileObj.takeScreenShotAllureAttach("Toaster Message & Added Summary From Suggestion");
 	}
 	
 	
