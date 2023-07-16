@@ -21,6 +21,11 @@ public class DashboardProfilePage extends BasePage{
 	public String SOCIAL_MEDIA_VALIDATION_TEXT="The social link field is required";
 	public String DESIGNATION_VALIDATION_TEXT="The designation name field is required";
 	public String MAILING_ADDRESS_VALIDATION_TEXT="The mailing address field is required";
+	public String JOB_TITTLE_VALIDATION_TEXT="The job title field is required";
+	public String COMPANY_NAME_VALIDATION_TEXT="The company name field is required";
+	public String START_DATE_VALIDATION_TEXT="The start date field is required";
+	public String LAST_DATE_VALIDATION_TEXT="The end date field is required";
+	public String WORK_EXPERIENCE_VALIDATION_TEXT="The Work experience field is required";
 	
 	
 	
@@ -60,26 +65,33 @@ public class DashboardProfilePage extends BasePage{
 	public By PERSONAL_SUMMARY_SUGGESTION_SCTROLL_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[5]"); 
 	public By PERSONAL_SUMMARY_SUGGESTION_SELECT_LOCATOR=By.xpath("//p[contains(text(),'Aiming for a demanding job in a multinational comp')]"); 
 	public By PERSONAL_SUMMARY_SUGGESTION_PROFESSION_SELECT_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/div[1]/p[1]"); 
-	public By WORK_EXPERENCE_ADDor_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/p[2]/a[1]"); 
-	public By WORK_EXPERENCE_ADD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/span[1]"); 
-	public By WORK_EXPERENCE_DELETE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[2]/span[2]"); 
-	public By WORK_EXPERENCE_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/button[1]"); 
-	public By WORK_EXPERENCE_NEXT_BUTTON=By.xpath("//button[contains(text(),'Next')]"); 
-	public By WORK_EXPERENCE_CURRENT_WORK_CHECKBOX=By.xpath("//input[@id='exampleCheck1']"); 
-	public By WORK_EXPERENCE_SELECT_PROFESSION_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
-	public By WORK_EXPERENCE_ORGANIZATION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]"); 
-	public By WORK_EXPERENCE_JOIN_DATE_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
-	public By WORK_EXPERENCE_END_DATE_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
-	public By WORK_EXPERENCE_JOINT_DATE_SELECT=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/span[11]"); 
-	public By WORK_EXPERENCE_END_DATE_SELCT=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/span[18]"); 
-	public By WORK_EXPERENCE_SELECT_PROFESSION=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[643]"); 
-	public By WORK_EXPERENCE_SUGESSTION_BACK_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/span[1]/span[1]"); 
-	public By WORK_EXPERENCE_RESPONSIBILITIES_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]"); 
-	public By WORK_EXPERENCE_RESPONSIBILITIES_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/button[1]"); 
-	public By WORK_EXPERENCE_RESPONSIBILITIES_SUGGESTION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/span[3]"); 
-	public By WORK_EXPERENCE_RESPONSIBILITIES_SUGGESTION_SELECT1=By.xpath("//p[contains(text(),'Advising senior managers on risk assessments inclu')]"); 
-	public By WORK_EXPERENCE_RESPONSIBILITIES_SUGGESTION_SELECT2=By.xpath("//p[contains(text(),'Maintaining the financial systems and policies con')]"); 
-	public By WORK_EXPERENCE_RESPONSIBILITIES_SUGGESTION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
+	public By WORK_EXPERIENCE_ADDor_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/p[2]/a[1]"); 
+	public By WORK_EXPERIENCE_ADD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/span[1]"); 
+	public By WORK_EXPERIENCE_DELETE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/span[1]"); 
+	public By WORK_EXPERIENCE_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/button[1]"); 
+	public By WORK_EXPERIENCE_NEXT_BUTTON=By.xpath("//button[contains(text(),'Next')]"); 
+	public By WORK_EXPERIENCE_CURRENT_WORK_CHECKBOX=By.xpath("//input[@id='exampleCheck1']"); 
+	public By WORK_EXPERIENCE_PROFESSION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
+	public By WORK_EXPERIENCE_PROFESSION_SELECTION_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/div[1]/p[1]"); 
+	public By WORK_EXPERIENCE_ORGANIZATION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]"); 
+	public By WORK_EXPERIENCE_JOIN_DATE_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
+	public By WORK_EXPERIENCE_END_DATE_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
+	public By WORK_EXPERIENCE_JOINT_DATE_SELECT=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/span[15]"); 
+	public By WORK_EXPERIENCE_END_DATE_SELECT=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/span[28]"); 
+	public By WORK_EXPERIENCE_SELECT_PROFESSION=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[643]"); 
+	public By WORK_EXPERIENCE_SUGESSTION_BACK_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/span[1]/span[1]"); 
+	public By WORK_EXPERIENCE_RESPONSIBILITIES_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]"); 
+	public By WORK_EXPERIENCE_RESPONSIBILITIES_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/button[1]"); 
+	public By WORK_EXPERIENCE_RESPONSIBILITIES_SUGGESTION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/span[3]"); 
+	public By WORK_EXPERIENCE_RESPONSIBILITIES_SUGGESTION_SELECT1=By.xpath("//p[contains(text(),'Identifying software application weaknesses and ta')]"); 
+	public By WORK_EXPERIENCE_RESPONSIBILITIES_SUGGESTION_SELECT2=By.xpath("//p[contains(text(),'Writing automation scripts and implementing softwa')]"); 
+	public By WORK_EXPERIENCE_RESPONSIBILITIES_SUGGESTION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
+	public By WORK_EXPERIENCE_JOB_TITTLE_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The job title field is required')]");
+	public By WORK_EXPERIENCE_COMPANY_NAME_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The company name field is required')]");
+	public By WORK_EXPERIENCE_START_DATE_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The start date field is required')]");
+	public By WORK_EXPERIENCE_LAST_DATE_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The end date field is required')]");
+	public By WORK_EXPERIENCE_VALIDATION_TEXT_LOCATOR=By.xpath("//span[contains(text(),'The Work experience field is required')]");
+	public By WORK_EXPERIENCE_SAVE_BUTTON=By.xpath("//button[contains(text(),'Save')]");
 	public By EDUCATION_ADD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/p[2]/a[1]"); 
 	public By EDUCATION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/button[1]"); 
 	public By EDUCATION_SAVE_BUTTON=By.xpath("//button[contains(text(),'Add')]"); 
@@ -102,8 +114,6 @@ public class DashboardProfilePage extends BasePage{
 	public By PROFESSIONAL_CERTIFICATION_SUGGESTION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/span[3]"); 
 	public By PROFESSIONAL_CERTIFICATION_SEGGESTION_SCROOLorSELECT_LOCATOR=By.xpath("//p[contains(text(),'Global travel professional Certification [Timefram"); 
 	public By PROFESSIONAL_CERTIFICATION_DELETE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1]/span[1]"); 
-	public By DELETE =By.xpath("//button[contains(text(),'Delete')]"); 
-	public By DELETE_CANCEL=By.xpath("//button[contains(text(),'No')]"); 
 	public By SKILL_ADD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/p[2]/a[1]"); 
 	public By SKILL_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/button[1]"); 
 	public By SKILL_SAVE_BUTTON=By.xpath("//button[contains(text(),'Save')]"); 
@@ -179,4 +189,27 @@ public class DashboardProfilePage extends BasePage{
 	public By SOCIAL_MEDIA_SAVE_BUTTON=By.xpath("//button[contains(text(),'Save')]");
 	public By SOCIAL_MEDIA_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The social link field is required')]");
 	public By SOCIAL_MEDIA_DELETE_BUTTON = By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[2]/div[1]/button[1]/span[1]");
+	public By DELETE_POP_UP_DELETE = By.xpath("//button[contains(text(),'Delete')]");
+	public By DELETE_POP_UP_CANCEL = By.xpath("//button[contains(text(),'No')]");
+	
+	
+	public void delete(By locator) throws InterruptedException {
+		try 
+		{
+			findElement(locator).click();
+			Thread.sleep(500);
+			findElement(DELETE_POP_UP_CANCEL).click();
+			Thread.sleep(500);
+			findElement(locator).click();
+			Thread.sleep(500);
+			findElement(DELETE_POP_UP_DELETE).click();
+			
+		} 
+		catch (Exception e) {
+			System.out.println("Element not found !!!!!!");
+		}
+			
+	}
+
+
 }

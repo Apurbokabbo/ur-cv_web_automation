@@ -302,6 +302,143 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 		dashboardPofileObj.takeScreenShotAllureAttach("Toaster Message & Added Summary From Suggestion");
 	}
 	
+	@Test
+	public void workExperienceAddButtonTest () throws InterruptedException  {
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADDor_BUTTON).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_CLOSE_BUTTON).click();
+		
+	}
 	
+	@Test
+	public void workExperienceFirstModalValidationVerify() throws InterruptedException {
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADDor_BUTTON).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_NEXT_BUTTON).click();
+		Thread.sleep(500);
+		dashboardPofileObj.takeScreenShotAllureAttach("Validation ScreenShot");
+		Thread.sleep(500);
+		dashboardPofileObj.assertionHard(dashboardPofileObj.WORK_EXPERIENCE_COMPANY_NAME_VALIDATION_LOCATOR, dashboardPofileObj.COMPANY_NAME_VALIDATION_TEXT);
+		dashboardPofileObj.assertionHard(dashboardPofileObj.WORK_EXPERIENCE_JOB_TITTLE_VALIDATION_LOCATOR, dashboardPofileObj.JOB_TITTLE_VALIDATION_TEXT);
+		dashboardPofileObj.assertionHard(dashboardPofileObj.WORK_EXPERIENCE_START_DATE_VALIDATION_LOCATOR, dashboardPofileObj.START_DATE_VALIDATION_TEXT);
+		dashboardPofileObj.assertionHard(dashboardPofileObj.WORK_EXPERIENCE_LAST_DATE_VALIDATION_LOCATOR, dashboardPofileObj.LAST_DATE_VALIDATION_TEXT);
+	}
+	
+	@Test
+	public void workExperienceFirstModalValidDataAdd() throws InterruptedException{
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADDor_BUTTON).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_SEARCH_KEY);
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(" ");
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_SELECTION_LOCATOR).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ORGANIZATION_INPUT_FIELD).sendKeys(dashboardPofileObj.SKILL_INPUT_TEXT);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_JOIN_DATE_INPUT_FIELD).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_JOINT_DATE_SELECT).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_END_DATE_INPUT_FIELD).click();
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_END_DATE_SELECT).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_NEXT_BUTTON).click();
+		
+	}
+	
+	@Test
+	public void workExperienceAddWithValidData() throws InterruptedException{
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADDor_BUTTON).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_SEARCH_KEY);
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(" ");
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_SELECTION_LOCATOR).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ORGANIZATION_INPUT_FIELD).sendKeys(dashboardPofileObj.SKILL_INPUT_TEXT);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_JOIN_DATE_INPUT_FIELD).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_JOINT_DATE_SELECT).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_END_DATE_INPUT_FIELD).click();
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_END_DATE_SELECT).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_NEXT_BUTTON).click();
+		Thread.sleep(13000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_RESPONSIBILITIES_SUGGESTION_SELECT1).click();
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_RESPONSIBILITIES_SUGGESTION_SELECT2).click();
+		Thread.sleep(2000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_SAVE_BUTTON).click();
+		Thread.sleep(2000);
+		
+	}
+	
+
+	@Test
+	public void workExperienceWorkExperienceValidation() throws InterruptedException{
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADDor_BUTTON).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_SEARCH_KEY);
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(" ");
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_SELECTION_LOCATOR).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ORGANIZATION_INPUT_FIELD).sendKeys(dashboardPofileObj.SKILL_INPUT_TEXT);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_JOIN_DATE_INPUT_FIELD).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_JOINT_DATE_SELECT).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_END_DATE_INPUT_FIELD).click();
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_END_DATE_SELECT).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_NEXT_BUTTON).click();
+		Thread.sleep(13000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_SAVE_BUTTON).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.assertionHard(dashboardPofileObj.WORK_EXPERIENCE_VALIDATION_TEXT_LOCATOR, dashboardPofileObj.WORK_EXPERIENCE_VALIDATION_TEXT);
+		dashboardPofileObj.takeScreenShotAllureAttach("Validation");
+		
+	}
+	
+	@Test
+	public void workExperienceDelete() throws InterruptedException {
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		dashboardPofileObj.delete(dashboardPofileObj.WORK_EXPERIENCE_DELETE_BUTTON);
+		
+	}
+	
+	@Test
+	public void workExperienceEdit()  throws InterruptedException {
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		
+	}
 
 }

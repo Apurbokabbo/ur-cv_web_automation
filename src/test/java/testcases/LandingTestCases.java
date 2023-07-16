@@ -757,7 +757,7 @@ public class LandingTestCases extends BaseDriver {
 		landingPage.findElement(landingPage.FOOTER_ALL_TEMPLATE_BUTTON).click();
 		Thread.sleep(1000);
 		landingPage.assertionURL(templatePage.TEMPLATES_URL);
-		Thread.sleep(1000);
+		
 	}
 	
 	@Test
@@ -772,7 +772,7 @@ public class LandingTestCases extends BaseDriver {
 		landingPage.findElement(landingPage.FOOTER_BLOGS_BUTTON).click();
 		Thread.sleep(1000);
 		landingPage.assertionURL("https://ur-cv.com/blogs");
-		Thread.sleep(1000);
+		
 	}
 	
 	@Test
@@ -787,7 +787,7 @@ public class LandingTestCases extends BaseDriver {
 		landingPage.findElement(landingPage.FOOTER_LOGIN_BUTTON).click();
 		Thread.sleep(1000);
 		landingPage.assertionURL(loginPage.LOGIN_URL);
-		Thread.sleep(1000);
+		
 	}
 	
 	@Test
@@ -798,11 +798,11 @@ public class LandingTestCases extends BaseDriver {
 		Thread.sleep(2000);
 		landingPage.hover(landingPage.FOOTER_CREATE_ACCOUNT_BUTTON);
 		Thread.sleep(1000);
-		
+		landingPage.takeScreenShotAllureAttach("Hover Effect of Create Account Button");
 		landingPage.findElement(landingPage.FOOTER_CREATE_ACCOUNT_BUTTON).click();
 		Thread.sleep(1000);
 		landingPage.assertionURL("https://ur-cv.com/register");
-		Thread.sleep(1000);
+		
 	}
 	
 	@Test
@@ -813,7 +813,7 @@ public class LandingTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		
 		landingPage.assertionHard(landingPage.FOOTER_NEWSLETTER_TEXT_LOCATOR, landingPage.FOOTER_NEWSLETTER_TEXT);
-		Thread.sleep(1000);
+		
 	}
 	
 	@Test
@@ -824,8 +824,7 @@ public class LandingTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		landingPage.findElement(landingPage.FOOTER_NEWSLETTER_SUBSCRIBE_BUTTON).click();
 		Thread.sleep(1000);
-		
-		Thread.sleep(1000);
+		landingPage.takeScreenShotAllureAttach("Footer NewsLetter Subcription Button Verify");
 	}
 	
 	@Test
@@ -838,8 +837,8 @@ public class LandingTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		landingPage.findElement(landingPage.FOOTER_NEWSLETTER_SUBSCRIBE_BUTTON).click();
 		Thread.sleep(1000);
+		landingPage.takeScreenShotAllureAttach("Validation ScreenShot");
 		
-		Thread.sleep(1000);
 	}
 	
 	@Test
