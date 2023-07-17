@@ -7,7 +7,7 @@
         <methods>
           <include name="setBrowser"/>
           <include name="closeBrowser"/>
-          <include name="workExperienceDelete"/>
+          <include name="workExperienceGetSuggestionCloseButtonVerify"/>
         </methods>
       </class> <!-- testcases.DashboardProfilePageTestCases -->
     </classes>

@@ -308,7 +308,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADDor_BUTTON).click();
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADD_BUTTON).click();
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_CLOSE_BUTTON).click();
 		
@@ -320,7 +320,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADDor_BUTTON).click();
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADD_BUTTON).click();
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_NEXT_BUTTON).click();
 		Thread.sleep(500);
@@ -338,7 +338,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADDor_BUTTON).click();
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADD_BUTTON).click();
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_SEARCH_KEY);
 		Thread.sleep(500);
@@ -364,29 +364,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADDor_BUTTON).click();
-		Thread.sleep(1000);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_SEARCH_KEY);
-		Thread.sleep(500);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(" ");
-		Thread.sleep(500);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_SELECTION_LOCATOR).click();
-		Thread.sleep(1000);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ORGANIZATION_INPUT_FIELD).sendKeys(dashboardPofileObj.SKILL_INPUT_TEXT);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_JOIN_DATE_INPUT_FIELD).click();
-		Thread.sleep(500);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_JOINT_DATE_SELECT).click();
-		Thread.sleep(500);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_END_DATE_INPUT_FIELD).click();
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_END_DATE_SELECT).click();
-		Thread.sleep(500);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_NEXT_BUTTON).click();
-		Thread.sleep(13000);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_RESPONSIBILITIES_SUGGESTION_SELECT1).click();
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_RESPONSIBILITIES_SUGGESTION_SELECT2).click();
-		Thread.sleep(2000);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_SAVE_BUTTON).click();
-		Thread.sleep(2000);
+		dashboardPofileObj.workExperienceAdd(dashboardPofileObj.WORK_EXPERIENCE_ADD_BUTTON);
 		
 	}
 	
@@ -397,7 +375,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
-		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADDor_BUTTON).click();
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADD_BUTTON).click();
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_SEARCH_KEY);
 		Thread.sleep(500);
@@ -438,7 +416,108 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
 		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_EDIT_BUTTON).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_EDIT_INPUT_FIELD).sendKeys(" update");
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ORGANIZATION_EDIT_INPUT_FIELD).sendKeys(" update");
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_CURRENT_WORK_CHECKBOX).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_NEXT_BUTTON).click();
+		Thread.sleep(13000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_RESPONSIBILITIES_EDIT_INPUT_FIELD).sendKeys("Updated !!!!!!!!!!!!!!!!");;
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_SAVE_BUTTON).click();
+		Thread.sleep(2000);
 		
 	}
+	
+	@Test
+	public void workExperienceAddingBackButtonVerify() throws InterruptedException{
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ADD_BUTTON).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(dashboardPofileObj.PERSONAL_INFO_DESIGNATION_SEARCH_KEY);
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(" ");
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_PROFESSION_SELECTION_LOCATOR).click();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_ORGANIZATION_INPUT_FIELD).sendKeys(dashboardPofileObj.SKILL_INPUT_TEXT);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_JOIN_DATE_INPUT_FIELD).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_JOINT_DATE_SELECT).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_END_DATE_INPUT_FIELD).click();
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_END_DATE_SELECT).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_NEXT_BUTTON).click();
+		Thread.sleep(13000);
+		
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_BACK_BUTTON_FROM_SECOND_MODAL_ADD).click();
+		
+		try {
+			Thread.sleep(500);
+			dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_NEXT_BUTTON).click();
+			
+			
+		} 
+		catch (Exception e) {
+			System.out.println("Back button working properly");
+			dashboardPofileObj.takeScreenShotAllureAttach("Back Button working");
+		}
+	}
+	
+	@Test
+	public void workExperienceEditingBackButtonVerify() throws InterruptedException{
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_EDIT_BUTTON).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_NEXT_BUTTON).click();
+		Thread.sleep(13000);
+		
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_BACK_BUTTON_FROM_SECOND_MODAL_EDIT).click();
+		
+		try {
+			Thread.sleep(500);
+			dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_NEXT_BUTTON).click();
+			
+			
+		} 
+		catch (Exception e) {
+			System.out.println("Back button working properly");
+			dashboardPofileObj.takeScreenShotAllureAttach("Back Button working");
+		}
+	}
+	
+	@Test
+	public void workExperienceGetSuggestionCloseButtonVerify() throws InterruptedException {
+		
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_EDIT_BUTTON).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_NEXT_BUTTON).click();
+		Thread.sleep(13000);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_SUGGESTION_CLOSE_BUTTON).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_GET_SUGGESTION_BUTTON).click();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_SUGGESTION_CLOSE_BUTTON).click();
+	}
+	
+	
+	
+	
+	
+	
 
 }

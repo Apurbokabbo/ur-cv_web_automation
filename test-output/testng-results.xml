@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="19" total="20" passed="1" failed="0" skipped="0">
+<testng-results ignored="23" total="24" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-16T16:50:20 BDT" name="Default suite" finished-at="2023-07-16T16:50:33 BDT" duration-ms="13515">
+  <suite started-at="2023-07-17T15:49:49 BDT" name="Default suite" finished-at="2023-07-17T15:50:16 BDT" duration-ms="27124">
     <groups>
     </groups>
-    <test started-at="2023-07-16T16:50:20 BDT" name="Default test" finished-at="2023-07-16T16:50:33 BDT" duration-ms="13515">
+    <test started-at="2023-07-17T15:49:49 BDT" name="Default test" finished-at="2023-07-17T15:50:16 BDT" duration-ms="27124">
       <class name="testcases.DashboardProfilePageTestCases">
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@512baff6]" started-at="2023-07-16T16:50:20 BDT" name="setBrowser" finished-at="2023-07-16T16:50:22 BDT" duration-ms="2509" status="PASS">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@1458ed9c]" started-at="2023-07-17T15:49:49 BDT" name="setBrowser" finished-at="2023-07-17T15:49:52 BDT" duration-ms="2561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method signature="workExperienceDelete()[pri:0, instance:testcases.DashboardProfilePageTestCases@512baff6]" started-at="2023-07-16T16:50:23 BDT" name="workExperienceDelete" finished-at="2023-07-16T16:50:32 BDT" duration-ms="9620" status="PASS">
+        <test-method signature="workExperienceGetSuggestionCloseButtonVerify()[pri:0, instance:testcases.DashboardProfilePageTestCases@1458ed9c]" started-at="2023-07-17T15:49:52 BDT" name="workExperienceGetSuggestionCloseButtonVerify" finished-at="2023-07-17T15:50:16 BDT" duration-ms="23595" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- workExperienceDelete -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@512baff6]" started-at="2023-07-16T16:50:32 BDT" name="closeBrowser" finished-at="2023-07-16T16:50:33 BDT" duration-ms="1184" status="PASS">
+        </test-method> <!-- workExperienceGetSuggestionCloseButtonVerify -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.DashboardProfilePageTestCases@1458ed9c]" started-at="2023-07-17T15:50:16 BDT" name="closeBrowser" finished-at="2023-07-17T15:50:16 BDT" duration-ms="755" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

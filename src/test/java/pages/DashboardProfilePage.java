@@ -65,15 +65,19 @@ public class DashboardProfilePage extends BasePage{
 	public By PERSONAL_SUMMARY_SUGGESTION_SCTROLL_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[5]"); 
 	public By PERSONAL_SUMMARY_SUGGESTION_SELECT_LOCATOR=By.xpath("//p[contains(text(),'Aiming for a demanding job in a multinational comp')]"); 
 	public By PERSONAL_SUMMARY_SUGGESTION_PROFESSION_SELECT_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/div[1]/p[1]"); 
-	public By WORK_EXPERIENCE_ADDor_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/p[2]/a[1]"); 
-	public By WORK_EXPERIENCE_ADD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/span[1]"); 
+	public By WORK_EXPERIENCE_ADD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/p[2]/a[1]"); 
+	public By WORK_EXPERIENCE_EDIT_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[2]/span[2]"); 
 	public By WORK_EXPERIENCE_DELETE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/span[1]"); 
 	public By WORK_EXPERIENCE_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/button[1]"); 
 	public By WORK_EXPERIENCE_NEXT_BUTTON=By.xpath("//button[contains(text(),'Next')]"); 
 	public By WORK_EXPERIENCE_CURRENT_WORK_CHECKBOX=By.xpath("//input[@id='exampleCheck1']"); 
+	public By WORK_EXPERIENCE_BACK_BUTTON_FROM_SECOND_MODAL_EDIT=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/span[1]"); 
+	public By WORK_EXPERIENCE_BACK_BUTTON_FROM_SECOND_MODAL_ADD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/span[1]/span[1]"); 
 	public By WORK_EXPERIENCE_PROFESSION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
+	public By WORK_EXPERIENCE_PROFESSION_EDIT_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
 	public By WORK_EXPERIENCE_PROFESSION_SELECTION_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/div[1]/p[1]"); 
 	public By WORK_EXPERIENCE_ORGANIZATION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]"); 
+	public By WORK_EXPERIENCE_ORGANIZATION_EDIT_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]"); 
 	public By WORK_EXPERIENCE_JOIN_DATE_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
 	public By WORK_EXPERIENCE_END_DATE_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
 	public By WORK_EXPERIENCE_JOINT_DATE_SELECT=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/span[15]"); 
@@ -81,6 +85,7 @@ public class DashboardProfilePage extends BasePage{
 	public By WORK_EXPERIENCE_SELECT_PROFESSION=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[643]"); 
 	public By WORK_EXPERIENCE_SUGESSTION_BACK_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/span[1]/span[1]"); 
 	public By WORK_EXPERIENCE_RESPONSIBILITIES_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]"); 
+	public By WORK_EXPERIENCE_RESPONSIBILITIES_EDIT_INPUT_FIELD=By.xpath("//body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/ul[2]/li[1]"); 
 	public By WORK_EXPERIENCE_RESPONSIBILITIES_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/button[1]"); 
 	public By WORK_EXPERIENCE_RESPONSIBILITIES_SUGGESTION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/span[3]"); 
 	public By WORK_EXPERIENCE_RESPONSIBILITIES_SUGGESTION_SELECT1=By.xpath("//p[contains(text(),'Identifying software application weaknesses and ta')]"); 
@@ -92,6 +97,8 @@ public class DashboardProfilePage extends BasePage{
 	public By WORK_EXPERIENCE_LAST_DATE_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The end date field is required')]");
 	public By WORK_EXPERIENCE_VALIDATION_TEXT_LOCATOR=By.xpath("//span[contains(text(),'The Work experience field is required')]");
 	public By WORK_EXPERIENCE_SAVE_BUTTON=By.xpath("//button[contains(text(),'Save')]");
+	public By WORK_EXPERIENCE_SUGGESTION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]");
+	public By WORK_EXPERIENCE_GET_SUGGESTION_BUTTON=By.xpath("//button[contains(text(),'suggestion')]");
 	public By EDUCATION_ADD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/p[2]/a[1]"); 
 	public By EDUCATION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/button[1]"); 
 	public By EDUCATION_SAVE_BUTTON=By.xpath("//button[contains(text(),'Add')]"); 
@@ -209,6 +216,38 @@ public class DashboardProfilePage extends BasePage{
 			System.out.println("Element not found !!!!!!");
 		}
 			
+	}
+	
+	public void workExperienceAdd(By locator) throws InterruptedException {
+		findElement(locator).click();
+		Thread.sleep(1000);
+		findElement(WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(PERSONAL_INFO_DESIGNATION_SEARCH_KEY);
+		Thread.sleep(500);
+		findElement(WORK_EXPERIENCE_PROFESSION_INPUT_FIELD).sendKeys(" ");
+		Thread.sleep(500);
+		findElement(WORK_EXPERIENCE_PROFESSION_SELECTION_LOCATOR).click();
+		Thread.sleep(1000);
+		findElement(WORK_EXPERIENCE_ORGANIZATION_INPUT_FIELD).sendKeys(SKILL_INPUT_TEXT);
+		findElement(WORK_EXPERIENCE_JOIN_DATE_INPUT_FIELD).click();
+		Thread.sleep(500);
+		findElement(WORK_EXPERIENCE_JOINT_DATE_SELECT).click();
+		Thread.sleep(500);
+		findElement(WORK_EXPERIENCE_END_DATE_INPUT_FIELD).click();
+		findElement(WORK_EXPERIENCE_END_DATE_SELECT).click();
+		Thread.sleep(500);
+		findElement(WORK_EXPERIENCE_NEXT_BUTTON).click();
+		Thread.sleep(13000);
+		findElement(WORK_EXPERIENCE_RESPONSIBILITIES_SUGGESTION_SELECT1).click();
+		findElement(WORK_EXPERIENCE_RESPONSIBILITIES_SUGGESTION_SELECT2).click();
+		Thread.sleep(2000);
+		findElement(WORK_EXPERIENCE_SAVE_BUTTON).click();
+		Thread.sleep(2000);
+		
+	}
+	
+	public void name() {
+		
+		
 	}
 
 
