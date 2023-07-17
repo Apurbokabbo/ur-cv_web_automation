@@ -514,6 +514,75 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 		dashboardPofileObj.findElement(dashboardPofileObj.WORK_EXPERIENCE_SUGGESTION_CLOSE_BUTTON).click();
 	}
 	
+	@Test
+	public void educationAddButtonVerify() throws InterruptedException {
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		
+		try {
+			dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_ADD_BUTTON).click();
+			Thread.sleep(500);
+			dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_CLOSE_BUTTON).click();
+						
+		} 
+		catch (Exception e) {
+			dashboardPofileObj.scrollingDownTillElementFound(dashboardPofileObj.EDUCATION_LOCATOR);
+			dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_ADD_BUTTON).click();
+			Thread.sleep(500);
+			dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_CLOSE_BUTTON).click();
+		}
+		
+	}
+	
+	
+	@Test
+	public void educationValidationVerify() throws InterruptedException{
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		
+		try {
+			dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_ADD_BUTTON).click();
+			Thread.sleep(500);
+			dashboardPofileObj.scrolldown();
+			dashboardPofileObj.scrolldown800();
+			Thread.sleep(1000);
+			dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_SAVE_BUTTON).click();
+			Thread.sleep(1000);
+			dashboardPofileObj.takeScreenShotAllureAttach("Validation!");
+			dashboardPofileObj.assertionHard(dashboardPofileObj.EDUCATION_INSTITUTION_VALIDATION_LOCATOR,dashboardPofileObj.EDUCATION_INSTITUTION_VALIDATION_TEXT);
+			dashboardPofileObj.assertionHard(dashboardPofileObj.EDUCATION_INSTITUTION_LOCATION_VALIDATION_LOCATOR,dashboardPofileObj.EDUCATION_INSTITUTION_LOCATION_VALIDATION_TEXT);
+			dashboardPofileObj.assertionHard(dashboardPofileObj.EDUCATION_INSTITUTION_DEGREE_VALIDATION_LOCATOR, dashboardPofileObj.EDUCATION_DEGREE_VALIDATION_TEXT);
+			dashboardPofileObj.assertionHard(dashboardPofileObj.EDUCATION_INSTITUTION_RESULT_VALIDATION_LOCATOR, dashboardPofileObj.EDUCATION_RESULT_VALIDATION_TEXT);
+			dashboardPofileObj.assertionHard(dashboardPofileObj.EDUCATION_START_DATE_VALIDATION_LOCATOR, dashboardPofileObj.START_DATE_VALIDATION_TEXT);
+			dashboardPofileObj.assertionHard(dashboardPofileObj.EDUCATION_LAST_DATE_VALIDATION_LOCATOR, dashboardPofileObj.LAST_DATE_VALIDATION_TEXT);
+			Thread.sleep(500);
+		} 
+		catch (Exception e) {
+			dashboardPofileObj.scrollingDownTillElementFound(dashboardPofileObj.EDUCATION_LOCATOR);
+			dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_ADD_BUTTON).click();
+			Thread.sleep(500);
+			dashboardPofileObj.scrolldown();
+			dashboardPofileObj.scrolldown800();
+			Thread.sleep(1000);
+			dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_SAVE_BUTTON).click();
+			Thread.sleep(1000);
+			dashboardPofileObj.takeScreenShotAllureAttach("Validation!");
+			dashboardPofileObj.assertionHard(dashboardPofileObj.EDUCATION_INSTITUTION_VALIDATION_LOCATOR,dashboardPofileObj.EDUCATION_INSTITUTION_VALIDATION_TEXT);
+			dashboardPofileObj.assertionHard(dashboardPofileObj.EDUCATION_INSTITUTION_LOCATION_VALIDATION_LOCATOR,dashboardPofileObj.EDUCATION_INSTITUTION_LOCATION_VALIDATION_TEXT);
+			dashboardPofileObj.assertionHard(dashboardPofileObj.EDUCATION_INSTITUTION_DEGREE_VALIDATION_LOCATOR, dashboardPofileObj.EDUCATION_DEGREE_VALIDATION_TEXT);
+			dashboardPofileObj.assertionHard(dashboardPofileObj.EDUCATION_INSTITUTION_RESULT_VALIDATION_LOCATOR, dashboardPofileObj.EDUCATION_RESULT_VALIDATION_TEXT);
+			dashboardPofileObj.assertionHard(dashboardPofileObj.EDUCATION_START_DATE_VALIDATION_LOCATOR, dashboardPofileObj.START_DATE_VALIDATION_TEXT);
+			dashboardPofileObj.assertionHard(dashboardPofileObj.EDUCATION_LAST_DATE_VALIDATION_LOCATOR, dashboardPofileObj.LAST_DATE_VALIDATION_TEXT);
+			Thread.sleep(500);
+			
+		}
+		
+	}
+	
 	
 	
 	

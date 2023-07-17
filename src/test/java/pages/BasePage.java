@@ -303,6 +303,11 @@ public class BasePage {
 		js.executeScript("window.scrollBy(0,350)", "");	
 	}
 	
+	public void scrolldown800() {
+		JavascriptExecutor js = (JavascriptExecutor) getDriver();
+		js.executeScript("window.scrollBy(0,800)", "");	
+	}
+	
 	public void takeScreenShotAllureAttach(String screenshotname) {
 		Allure.addAttachment(screenshotname, new ByteArrayInputStream(((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.BYTES)));
 		

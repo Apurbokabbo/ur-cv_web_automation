@@ -26,6 +26,12 @@ public class DashboardProfilePage extends BasePage{
 	public String START_DATE_VALIDATION_TEXT="The start date field is required";
 	public String LAST_DATE_VALIDATION_TEXT="The end date field is required";
 	public String WORK_EXPERIENCE_VALIDATION_TEXT="The Work experience field is required";
+	public String EDUCATION_INSTITUTION_VALIDATION_TEXT="The institution name field is required";
+	public String EDUCATION_INSTITUTION_LOCATION_VALIDATION_TEXT="The institution location field is required";
+	public String EDUCATION_DEGREE_VALIDATION_TEXT="The degree field is required";
+	public String EDUCATION_RESULT_VALIDATION_TEXT="Please enter your result";
+
+	
 	
 	
 	
@@ -100,6 +106,7 @@ public class DashboardProfilePage extends BasePage{
 	public By WORK_EXPERIENCE_SUGGESTION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]");
 	public By WORK_EXPERIENCE_GET_SUGGESTION_BUTTON=By.xpath("//button[contains(text(),'suggestion')]");
 	public By EDUCATION_ADD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/p[2]/a[1]"); 
+	public By EDUCATION_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/p[1]"); 
 	public By EDUCATION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/button[1]"); 
 	public By EDUCATION_SAVE_BUTTON=By.xpath("//button[contains(text(),'Add')]"); 
 	public By EDUCATION_CURRENTLY_STUDY_CHECKBOX=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/input[1]"); 
@@ -112,7 +119,13 @@ public class DashboardProfilePage extends BasePage{
 	public By EDUCATION_START_DATE_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
 	public By EDUCATION_END_DATE_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
 	public By EDUCATION_EDIT_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/a[2]/span[2]"); 
-	public By EDUCATION_DELETE=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]/span[1]"); 
+	public By EDUCATION_DELETE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]/span[1]"); 
+	public By EDUCATION_INSTITUTION_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The institution name field is required')]"); 
+	public By EDUCATION_INSTITUTION_LOCATION_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The institution location field is required')]"); 
+	public By EDUCATION_INSTITUTION_DEGREE_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The degree field is required')]"); 
+	public By EDUCATION_INSTITUTION_RESULT_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'Please enter your result')]"); 
+	public By EDUCATION_START_DATE_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The start date field is required')]"); 
+	public By EDUCATION_LAST_DATE_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The end date field is required')]"); 
 	public By PROFESSIONAL_CERTIFICATION_ADD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/p[2]/a[1]"); 
 	public By PROFESSIONAL_CERTIFICATION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]"); 
 	public By PROFESSIONAL_CERTIFICATION_GET_SUGGESTION=By.xpath("//button[contains(text(),'suggestion')]"); 
