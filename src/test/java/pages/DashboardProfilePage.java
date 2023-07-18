@@ -30,6 +30,8 @@ public class DashboardProfilePage extends BasePage{
 	public String EDUCATION_INSTITUTION_LOCATION_VALIDATION_TEXT="The institution location field is required";
 	public String EDUCATION_DEGREE_VALIDATION_TEXT="The degree field is required";
 	public String EDUCATION_RESULT_VALIDATION_TEXT="Please enter your result";
+	public String EDUCATION_INSTITUTION_NAME_TEXT="IRSCB";
+	public String EDUCATION_INSTITUTION_LOCATION_INPUT_NAME_TEXT="Brahmanbaria , Chattagram,Bangladesh.";
 
 	
 	
@@ -110,11 +112,17 @@ public class DashboardProfilePage extends BasePage{
 	public By EDUCATION_CLOSE_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/button[1]"); 
 	public By EDUCATION_SAVE_BUTTON=By.xpath("//button[contains(text(),'Add')]"); 
 	public By EDUCATION_CURRENTLY_STUDY_CHECKBOX=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/input[1]"); 
+	public By EDUCATION_CURRENTLY_STUDY_CHECKBOX_UPDATE=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/input[1]"); 
 	public By EDUCATION_INSTITUTION_NAME_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
+	public By EDUCATION_INSTITUTION_NAME_INPUT_FIELD_UPDATE=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
 	public By EDUCATION_INSTITUTION_LOCATION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/input[1]"); 
+	public By EDUCATION_INSTITUTION_LOCATION_INPUT_FIELD_UPDATE=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/input[1]"); 
 	public By EDUCATION_DEGREE_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/input[1]"); 
+	public By EDUCATION_DEGREE_INPUT_FIELD_UPDATE=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/input[1]"); 
 	public By EDUCATION_FIELD_OF_STUDY_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/input[1]"); 
+	public By EDUCATION_FIELD_OF_STUDY_INPUT_FIELD_UPDATE=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/input[1]"); 
 	public By EDUCATION_RESULT_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/input[1]"); 
+	public By EDUCATION_RESULT_INPUT_FIELD_UPDATE=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/input[1]"); 
 	public By EDUCATION_OUT_OF_INPUT_RESULT=By.xpath("//button[@id='dropdown-1__BV_toggle_']"); 
 	public By EDUCATION_START_DATE_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
 	public By EDUCATION_END_DATE_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"); 
@@ -126,6 +134,10 @@ public class DashboardProfilePage extends BasePage{
 	public By EDUCATION_INSTITUTION_RESULT_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'Please enter your result')]"); 
 	public By EDUCATION_START_DATE_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The start date field is required')]"); 
 	public By EDUCATION_LAST_DATE_VALIDATION_LOCATOR=By.xpath("//span[contains(text(),'The end date field is required')]"); 
+	public By EDUCATION_START_DATE_SELECT_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/span[17]"); 
+	public By EDUCATION_LAST_DATE_SELECT_LOCATOR=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/span[21]"); 
+	public By EDUCATION_UPDATE_BUTTON=By.xpath("//button[contains(text(),'Update')]"); 
+	
 	public By PROFESSIONAL_CERTIFICATION_ADD_BUTTON=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/p[2]/a[1]"); 
 	public By PROFESSIONAL_CERTIFICATION_INPUT_FIELD=By.xpath("//body/div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]"); 
 	public By PROFESSIONAL_CERTIFICATION_GET_SUGGESTION=By.xpath("//button[contains(text(),'suggestion')]"); 
@@ -258,7 +270,28 @@ public class DashboardProfilePage extends BasePage{
 		
 	}
 	
-	public void name() {
+	public void addEducationValidData() throws InterruptedException {
+		
+		findElement(EDUCATION_ADD_BUTTON).click();
+		Thread.sleep(500);
+		findElement(EDUCATION_INSTITUTION_NAME_INPUT_FIELD).sendKeys(EDUCATION_INSTITUTION_NAME_TEXT);
+		findElement(EDUCATION_INSTITUTION_LOCATION_INPUT_FIELD).sendKeys(EDUCATION_INSTITUTION_LOCATION_INPUT_NAME_TEXT);
+		findElement(EDUCATION_DEGREE_INPUT_FIELD).sendKeys("Bsc");
+		findElement(EDUCATION_FIELD_OF_STUDY_INPUT_FIELD).sendKeys("Cse");
+		findElement(EDUCATION_RESULT_INPUT_FIELD).sendKeys("3.50");
+		scrolldown();
+		Thread.sleep(500);
+		findElement(EDUCATION_START_DATE_INPUT_FIELD).click();
+		scrolldown();
+		Thread.sleep(500);
+		findElement(EDUCATION_START_DATE_SELECT_LOCATOR).click();
+		findElement(EDUCATION_END_DATE_INPUT_FIELD).click();
+		scrolldown();
+		Thread.sleep(500);
+		findElement(EDUCATION_LAST_DATE_SELECT_LOCATOR).click();
+		scrolldown800();
+		Thread.sleep(1000);
+		findElement(EDUCATION_SAVE_BUTTON).click();
 		
 		
 	}

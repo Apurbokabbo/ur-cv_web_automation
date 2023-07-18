@@ -6,8 +6,8 @@
       <class name="testcases.DashboardProfilePageTestCases">
         <methods>
           <include name="setBrowser"/>
+          <include name="educationUpdate"/>
           <include name="closeBrowser"/>
-          <include name="workExperienceGetSuggestionCloseButtonVerify"/>
         </methods>
       </class> <!-- testcases.DashboardProfilePageTestCases -->
     </classes>

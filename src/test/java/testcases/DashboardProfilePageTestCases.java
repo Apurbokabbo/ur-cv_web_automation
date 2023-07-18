@@ -581,9 +581,55 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 			
 		}
 		
+		
 	}
 	
+	@Test
+	public void addEducationWithValidData() throws InterruptedException{
+		
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		dashboardPofileObj.addEducationValidData();
+		
+	}
 	
+	@Test
+	public void educationUpdate() throws InterruptedException {
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_EDIT_BUTTON).click();
+		dashboardPofileObj.scrolldown800();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_INSTITUTION_NAME_INPUT_FIELD_UPDATE).sendKeys(" Updated");
+		dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_INSTITUTION_LOCATION_INPUT_FIELD_UPDATE).sendKeys(" Updated");
+		dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_DEGREE_INPUT_FIELD_UPDATE).sendKeys("Bsc updated");
+		dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_FIELD_OF_STUDY_INPUT_FIELD_UPDATE).sendKeys("Cse Updated");
+		dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_RESULT_INPUT_FIELD_UPDATE).sendKeys("3.20");
+		dashboardPofileObj.scrolldown();
+		Thread.sleep(500);
+		dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_CURRENTLY_STUDY_CHECKBOX_UPDATE).click();
+		dashboardPofileObj.scrolldown800();
+		Thread.sleep(1000);
+		dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_UPDATE_BUTTON).click();
+		
+	}
+	
+	@Test
+	public void educationDelete() throws InterruptedException {
+		
+		getDriver().get(loginObj.LOGIN_URL);
+		Thread.sleep(1000);
+		loginObj.loginWithValidData(registerPageObj.MAIL, registerPageObj.PASSWORD);
+		Thread.sleep(1000);
+		dashboardPofileObj.scrolldown800();
+		Thread.sleep(500);
+		dashboardPofileObj.delete(dashboardPofileObj.EDUCATION_DELETE_BUTTON);
+		
+	}
 	
 	
 	
