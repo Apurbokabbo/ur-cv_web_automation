@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="28" total="29" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -20,6 +21,29 @@
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testcases.DashboardProfilePageTestCases -->
+=======
+<testng-results ignored="25" total="26" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-18T00:05:49 BDT" name="Default suite" finished-at="2023-06-18T00:06:15 BDT" duration-ms="26276">
+    <groups>
+    </groups>
+    <test started-at="2023-06-18T00:05:49 BDT" name="Default test" finished-at="2023-06-18T00:06:15 BDT" duration-ms="26276">
+      <class name="testcases.TermConditionTestCases">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TermConditionTestCases@1ffaf86]" started-at="2023-06-18T00:05:50 BDT" name="setBrowser" finished-at="2023-06-18T00:06:05 BDT" duration-ms="15892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method signature="submissionTittleVerify()[pri:0, instance:testcases.TermConditionTestCases@1ffaf86]" started-at="2023-06-18T00:06:05 BDT" name="submissionTittleVerify" finished-at="2023-06-18T00:06:15 BDT" duration-ms="9108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submissionTittleVerify -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TermConditionTestCases@1ffaf86]" started-at="2023-06-18T00:06:15 BDT" name="closeBrowser" finished-at="2023-06-18T00:06:15 BDT" duration-ms="920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TermConditionTestCases -->
+>>>>>>> e210d780a9bf21fd943dea01de75711bff4b85bd
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
