@@ -616,7 +616,7 @@ public class DashboardProfilePageTestCases extends BaseDriver {
 		Thread.sleep(1000);
 		dashboardPofileObj.findElement(dashboardPofileObj.EDUCATION_UPDATE_BUTTON).click();
 		
-	}
+	}     
 	
 	@Test
 	public void educationDelete() throws InterruptedException {
